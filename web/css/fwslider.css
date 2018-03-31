@@ -15,34 +15,34 @@
     width:100%;
 }
 #fwslider .slidePrev {
-  	position: absolute;
+    position: absolute;
     top:50%;
     left:-50px;
     z-index: 10;
 }
 #fwslider .slidePrev span {
-	background-image: url("../images/img-sprite.png");
-	width: 72px;
-	height: 128px;
-	float: left;
-	background-position:-10px -243px;
-	background-repeat: no-repeat;
-	cursor: pointer;
+    background-image: url("../images/img-sprite.png");
+    width: 72px;
+    height: 128px;
+    float: left;
+    background-position:-10px -243px;
+    background-repeat: no-repeat;
+    cursor: pointer;
 }
 #fwslider .slideNext {
-   	position: absolute;
+    position: absolute;
     top:50%;
     right:-50px;
-   	z-index: 10;
+    z-index: 10;
 }
 #fwslider .slideNext span {
- 	background-image: url("../images/img-sprite.png");
-	width: 72px;
-	height: 128px;
-	float: left;
-	background-position:-105px -243px;
-	background-repeat: no-repeat;
-	cursor: pointer;
+    background-image: url("../images/img-sprite.png");
+    width: 72px;
+    height: 128px;
+    float: left;
+    background-position:-105px -243px;
+    background-repeat: no-repeat;
+    cursor: pointer;
 }
 #fwslider .timers {
     height:4px;
@@ -73,18 +73,18 @@
 }
 #fwslider .slide_content_wrap { /* Slider Text Content Container Style */
     max-width: 600px;
-	margin: 12% auto;
+    margin: 12% auto;
 }
 #fwslider .title {  /* Slider Title Style */
-	color: #FFF;
-	font-size: 5em;
-	padding-top: 5%;
-	font-style: normal;
-	text-transform: uppercase;
-	border: none;
-	font-weight: 800;
-	line-height: 1.3em;
-	margin-bottom: 5%;
+    color: #FFF;
+    font-size: 5em;
+    padding-top: 5%;
+    font-style: normal;
+    text-transform: uppercase;
+    border: none;
+    font-weight: 800;
+    line-height: 1.3em;
+    margin-bottom: 5%;
 }
 /* ------------------------------- 4. Media Query Max Width 1300, Min Width 720 ------------------------------- */
 /* ------------------------------- 5. Media Query Max Width 719 ------------------------------- */
@@ -94,20 +94,20 @@
     #fwslider .slide_content_wrap { display:none; }
     #fwslider .timers { display:none; }
     #fwslider .slide_content {cursor: pointer;}
-	#fwslider .title {
-		margin-left: 19%;
-		font-size: 3em;
-	}
+    #fwslider .title {
+        margin-left: 19%;
+        font-size: 3em;
+    }
 }
 @media (max-width:1366px){
-   #fwslider .title {
-		margin-left:8%;
-		font-size: 4em;
-	}
+    #fwslider .title {
+        margin-left:8%;
+        font-size: 4em;
+    }
 }
-@media (max-width:768px)
-	#fwslider .title {
-		margin-left: 19%;
-		font-size: 3em;
-	}
+@media (max-width:768px){
+    #fwslider .title {
+        margin-left: 19%;
+        font-size: 3em;
+    }
 }

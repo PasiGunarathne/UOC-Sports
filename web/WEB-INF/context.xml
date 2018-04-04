@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Context path="/SPORTs" reloadable="true" />
+<!--<Context 
+  docBase="<yourApp>" 
+  path="" 
+  reloadable="true" 
+/>-->
+
+<!--<web-app xmlns="http://java.sun.com/xml/ns/javaee" version="2.5" xmlns="http://www.netbeans.org/ns/project/1">
+    <display-name>Registration</display-name>
+<servlet>
+    <servlet-name> reg </servlet-name>
+    <servlet-class>jdbc.Registration</servlet-class>
+</servlet>
+
+<servlet-mapping>
+    <servlet-name>reg</servlet-name>
+    <url-pattern>/regServlet</url-pattern>
+</servlet-mapping>
+</web-app>-->

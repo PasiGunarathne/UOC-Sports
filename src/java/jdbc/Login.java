@@ -79,6 +79,14 @@ public class Login extends HttpServlet {
                     RequestDispatcher rd = request.getRequestDispatcher("Staff.jsp");
                     rd.include(request, response);
                 }
+                if (name.equals("PK")) {
+                    RequestDispatcher rd = request.getRequestDispatcher("Staff.jsp");
+                    rd.include(request, response);
+                }
+                if (name.equals("Tom")) {
+                    RequestDispatcher rd = request.getRequestDispatcher("Staff.jsp");
+                    rd.include(request, response);
+                }
 
                 out.print("You have successfully Logged in!");
             } else {

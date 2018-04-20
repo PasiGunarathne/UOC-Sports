@@ -72,7 +72,7 @@
     height:100%;
 }
 #fwslider .slide_content_wrap { /* Slider Text Content Container Style */
-    max-width: 600px;
+    max-width: 1000px;
     margin: 12% auto;
 }
 #fwslider .title {  /* Slider Title Style */

@@ -20,7 +20,7 @@ and open the template in the editor.
         <script src="js/jquery-ui.min.js"></script>
         <script src="js/fwslider.js"></script>
         <!--end slider -->
-        <script type="text/javascript">
+<!--        <script type="text/javascript">
             $(document).ready(function () {
                 $(".dropdown img.flag").addClass("flagvisibility");
 
@@ -50,10 +50,13 @@ and open the template in the editor.
                     $(".dropdown img.flag").toggleClass("flagvisibility");
                 });
             });
-        </script>
-    </head>
+        </script>-->
+    </head>     
     <body>
-        <!--<%@incude file="WEB-INF/Header.jspf %>-->
+        <!--<%@include file="WEB-INF/Header.jspf %>-->
+        <!--<%@include file = "WEB-INF/Header.jsp" >-->
+        <!--<jsp:include page="WEB-INF/header.jsp"/>-->
+
         <div class="header">
             <div class="container">
                 <div class="row">
@@ -67,7 +70,7 @@ and open the template in the editor.
                                 <ul class="nav" id="nav">
                                     <li><a href="index.html">Home</a></li>
                                     <li><a href="About.jsp">About</a></li>
-                                    <li><a href="Contact.jsp">Contact</a></li>
+                                    <li><a href="History.jsp">History</a></li>
                                     <li><a href="Events.jsp">Events</a></li>
                                     <li><a href="Registration.jsp">Register</a></li>
                                     <li><a href="Login.jsp">Login</a></li>                              
@@ -95,7 +98,7 @@ and open the template in the editor.
             new UISearch(document.getElementById('sb-search'));
                             </script>
                             <!----//search-scripts---->
-                            <ul class="icon1 sub-icon1 profile_img">
+<!--                            <ul class="icon1 sub-icon1 profile_img">
                                 <li><a class="active-icon c1" href="#"> </a>
                                     <ul class="sub-icon1 list">
                                         <div class="product_control_buttons">
@@ -114,13 +117,15 @@ and open the template in the editor.
                                         <div class="clear"></div>
                                     </ul>
                                 </li>
-                            </ul>
+                            </ul>-->
                         </div>
                     </div>
-                               <div class="clear"></div>
+                           <div class="clear"></div>
              </div>
             </div>
         </div>
+        
+        
         <div class="banner">
             <!-- start slider -->
             <div id="fwslider">
@@ -146,6 +151,17 @@ and open the template in the editor.
                     <!-- /Duplicate to create more slides -->
                     <div class="slide">
                         <img src="images/chess1.jpg" class="img-responsive" alt=""/>
+                        <div class="slide_content">
+                            <div class="slide_content_wrap">
+                                <center>
+                                    <h1 class="title">Sports Management System<br>And<br>Ground Booking System</h1>
+
+                                </center>                                <!-- <div class="button"><a href="#">See De tails</a></div> -->
+                            </div>
+                        </div>
+                    </div>
+                     <div class="slide">
+                        <img src="images/g21.jpg" class="img-responsive" alt=""/>
                         <div class="slide_content">
                             <div class="slide_content_wrap">
                                 <center>

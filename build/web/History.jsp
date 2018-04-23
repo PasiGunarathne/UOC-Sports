@@ -1,6 +1,6 @@
 <%-- 
-    Document   : Contact
-    Created on : Apr 20, 2018, 1:04:24 PM
+    Document   : History
+    Created on : Apr 20, 2018, 6:01:47 PM
     Author     : Pasindu
 --%>
 
@@ -8,11 +8,9 @@
 <!DOCTYPE html>
 <html>
     <head>
+                
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Contact Page</title>
-        
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>UOC Sports</title>
+        <title>History</title>
 
         <!-- <title>Free Snow Bootstrap Website Template | Home :: w3layouts</title> -->
 <link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
@@ -77,7 +75,7 @@
                                 <ul class="nav" id="nav">
                                     <li><a href="index.html">Home</a></li>
                                     <li><a href="About.jsp">About</a></li>
-                                    <li><a href="Contact.jsp">Contact</a></li>
+                                    <li><a href="History.jsp">History</a></li>
                                     <li><a href="Events.jsp">Events</a></li>
                                     <li><a href="Registration.jsp">Register</a></li>
                                     <li><a href="Login.jsp">Login</a></li>                              
@@ -132,10 +130,11 @@
             </div>
         </div>
         
-        <h1>Hello Contact!</h1>
+        <h1>Hello History!</h1>
         <p>
-            This page is for contact details..
+            This page is for history details.. players acheivements and game records etc..
         </p>
     </body>
     
 </html>
+

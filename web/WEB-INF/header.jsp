@@ -1,67 +1,14 @@
- <%-- 
-    Document   : Login
-    Created on : Mar 27, 2018, 11:37:44 AM
+<%-- 
+    Document   : header
+    Created on : Apr 23, 2018, 8:37:35 AM
     Author     : Pasindu
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Login</title>
 
-        <!-- <title>Free Snow Bootstrap Website Template | Home :: w3layouts</title> -->
-<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
-<link href="css/style.css" rel='stylesheet' type='text/css' />
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
-<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
-<script src="js/jquery.min.js"></script>
-<!-- <script src="js/jquery.easydropdown.js"></script> -->
-<!--start slider -->
-<link rel="stylesheet" href="css/fwslider.css" media="all">
-<script src="js/jquery-ui.min.js"></script>
-<script src="js/fwslider.js"></script>
-<!--end slider -->
- <script type="text/javascript">
-        $(document).ready(function() {
-            $(".dropdown img.flag").addClass("flagvisibility");
-
-            $(".dropdown dt a").click(function() {
-                $(".dropdown dd ul").toggle();
-            });
-                        
-            $(".dropdown dd ul li a").click(function() {
-                var text = $(this).html();
-                $(".dropdown dt a span").html(text);
-                $(".dropdown dd ul").hide();
-                $("#result").html("Selected value is: " + getSelectedValue("sample"));
-            });
-                        
-            function getSelectedValue(id) {
-                return $("#" + id).find("dt a span.value").html();
-            }
-
-            $(document).bind('click', function(e) {
-                var $clicked = $(e.target);
-                if (! $clicked.parents().hasClass("dropdown"))
-                    $(".dropdown dd ul").hide();
-            });
-
-
-            $("#flagSwitcher").click(function() {
-                $(".dropdown img.flag").toggleClass("flagvisibility");
-            });
-        });
-     </script>
-
-    </head>
-    <body>
-
-                <div class="header">
-            <div class="container">
+ <div class="header">
+                <div class="container">
                 <div class="row">
                     <div class="col-md-12">
                         <div class="header-left">
@@ -101,7 +48,7 @@
             new UISearch(document.getElementById('sb-search'));
                             </script>
                             <!----//search-scripts---->
-                            <ul class="icon1 sub-icon1 profile_img">
+<!--                            <ul class="icon1 sub-icon1 profile_img">
                                 <li><a class="active-icon c1" href="#"> </a>
                                     <ul class="sub-icon1 list">
                                         <div class="product_control_buttons">
@@ -120,33 +67,11 @@
                                         <div class="clear"></div>
                                     </ul>
                                 </li>
-                            </ul>
+                            </ul>-->
                         </div>
                     </div>
-                               <div class="clear"></div>
+                   <div class="clear"></div>
              </div>
             </div>
-        </div>
-
-    <center>
-        <h1>Hello java EE</h1>
+           </div>
         
-    </center>
-    
-    
-    <div align="center">
-            <div class="container">
-                <form action="Login" method="post">
-                    <h2>Login Form</h2>
-                User name : <input type="text" name="user"  required="required">
-                Password : <input type="password" name="password"  required="required">
-                <input type="submit" value="LOGIN"> 
-            </form>
-            </div>
-          
-        </div>
-
-        
-        
-    </body>
-</html>

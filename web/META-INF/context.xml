@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Context path="/UOC_Sports" >
+<Context path="/UOC-Sports">
 </Context>
-
 <!--<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
@@ -15,20 +14,16 @@
   </description>
 
 </web-app>-->
-
 <!--<Context path="/Sports" docBase="C:\Users\Pasindu\Documents\NetBeansProjects\UOC_Sports">-->
 <!--</Context>-->
-
 <!--<Context 
   docBase="C:\Program Files\Apache Software Foundation\Tomcat 8.5\webapps\SPORT.war" 
   path="/SPORT" 
   reloadable="true" 
 />-->
-
 <!--<welcome-file-list>
     <welcome-file>index.xhtml</welcome-file>
 </welcome-file-list>-->
-
 <!--<web-app xmlns="http://java.sun.com/xml/ns/javaee"
            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
            xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
@@ -46,7 +41,6 @@
 </servlet-mapping>
 
 </web-app>-->
-
 <!--<web-app xmlns="http://java.sun.com/xml/ns/javaee" version="2.5" xmlns="http://www.netbeans.org/ns/project/1">
     <display-name>Registration</display-name>
 <servlet>

@@ -92,7 +92,7 @@ public class Login extends HttpServlet {
                     rd.include(request, response);
                 }
 
-                out.print("You have successfully Logged in!");
+//                out.print("You have successfully Logged in!");
             } else {
 //                response.sendRedirect("Login.jsp");
                 RequestDispatcher rd = request.getRequestDispatcher("Login.jsp");

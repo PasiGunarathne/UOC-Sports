@@ -15,7 +15,7 @@ and open the template in the editor.
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>JSP Page</title>
+        <title>UOC Sport Management System and Ground booking System</title>
 
         <!-- <title>Free Snow Bootstrap Website Template | Home :: w3layouts</title> -->
 <link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
@@ -83,7 +83,7 @@ and open the template in the editor.
                                 <li><a href="experiance.html">Events</a></li>
                                 <li><a href="experiance.html">Experiance</a></li>
                                 <li><a href="Registration.jsp">Register</a></li>
-                                <li><a href="index.html">Logout</a></li>                              
+                                <li><a href="Login.jsp">Logout</a></li>                              
                                 <div class="clear"></div>
                             </ul>
                             <script type="text/javascript" src="js/responsive-nav.js"></script>

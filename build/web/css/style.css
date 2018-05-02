@@ -55,8 +55,8 @@ body a{
     background:#fff;
     color:#000;
 } 
-#nav .current a {
-    color:red;
+#nav .current a{
+    color: red;
 }
 .toggleMenu {
     display:  none;
@@ -547,7 +547,7 @@ li.list_desc h4 a:hover{
 }
 .content-bottom{
     width:100%;
-    background: url(../images/bg_image.jpg)no-repeat center top;
+    background: url(../images/F.jpg)no-repeat center top;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -565,6 +565,45 @@ li.list_desc h4 a:hover{
     line-height: 1.2em;
     margin: 2% 0 10%;
 }
+
+.content-bottom1{
+    width:100%;
+    background: url(../images/R3.jpg)no-repeat center top;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-position: center;
+    background-size: 100% 100%;
+    height:100%;
+    padding:15% 0;
+}
+
+.content-bottom2{
+    width:100%;
+    background: url(../images/sports-1.jpg)no-repeat center top;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-position: center;
+    background-size: 100% 100%;
+    height:100%;
+    padding:15% 0;
+}
+.content-bottom3{
+    width:100%;
+    background: url(../images/C.jpg)no-repeat center top;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-position: center;
+    background-size: 100% 100%;
+    height:100%;
+    padding:15% 0;
+}
+
 p.m_1{
     color: #FFF;
     font-size: 0.85em;
@@ -1238,6 +1277,10 @@ p.m_8{
 .text {
     width:50%;
     float:left;
+}
+.text1{
+    width: 50%;
+    float: left;
 }
 .text input[type="text"], .text textarea {
     width:100%;
@@ -2034,3 +2077,4 @@ fieldset.input input[type="submit"]:hover {
         margin: 10px 0;
     }
 }
+

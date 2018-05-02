@@ -10,6 +10,6 @@
         <h1>Hello ADMIN!</h1>
         <div>You know who I'm?</div>
         
-        <jsp:include page="WEB-INF/footer.jsp"/>
+    <jsp:include page="WEB-INF/footer.jsp"/>
     </body>
 </html>

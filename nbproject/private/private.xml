@@ -4,13 +4,18 @@
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
             <file>file:/C:/Users/Pasindu/Documents/NetBeansProjects/UOC_Sports/web/Admin.jsp</file>
-            <file>file:/C:/Users/Pasindu/Documents/NetBeansProjects/UOC_Sports/src/java/com/sessionexample.java</file>
             <file>file:/C:/Users/Pasindu/Documents/NetBeansProjects/UOC_Sports/web/index.html</file>
+            <file>file:/C:/Users/Pasindu/Documents/NetBeansProjects/UOC_Sports/web/WEB-INF/proheader.jsp</file>
             <file>file:/C:/Users/Pasindu/Documents/NetBeansProjects/UOC_Sports/web/js/jquery.flexisel.js</file>
+            <file>file:/C:/Users/Pasindu/Documents/NetBeansProjects/UOC_Sports/src/java/jdbc/Registration.java</file>
             <file>file:/C:/Users/Pasindu/Documents/NetBeansProjects/UOC_Sports/web/css/style.css</file>
             <file>file:/C:/Users/Pasindu/Documents/NetBeansProjects/UOC_Sports/web/WEB-INF/header.jsp</file>
-            <file>file:/C:/Users/Pasindu/Documents/NetBeansProjects/UOC_Sports/web/About.jsp</file>
             <file>file:/C:/Users/Pasindu/Documents/NetBeansProjects/UOC_Sports/web/css/jquery.fancybox.css</file>
+            <file>file:/C:/Users/Pasindu/Documents/NetBeansProjects/UOC_Sports/src/java/com/sessionexample.java</file>
+            <file>file:/C:/Users/Pasindu/Documents/NetBeansProjects/UOC_Sports/src/java/jdbc/Login.java</file>
+            <file>file:/C:/Users/Pasindu/Documents/NetBeansProjects/UOC_Sports/web/Staff.jsp</file>
+            <file>file:/C:/Users/Pasindu/Documents/NetBeansProjects/UOC_Sports/web/Login.jsp</file>
+            <file>file:/C:/Users/Pasindu/Documents/NetBeansProjects/UOC_Sports/web/Registration.jsp</file>
         </group>
     </open-files>
 </project-private>

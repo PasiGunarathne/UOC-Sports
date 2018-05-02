@@ -20,37 +20,37 @@ and open the template in the editor.
         <script src="js/jquery-ui.min.js"></script>
         <script src="js/fwslider.js"></script>
         <!--end slider -->
-<!--        <script type="text/javascript">
-            $(document).ready(function () {
-                $(".dropdown img.flag").addClass("flagvisibility");
-
-                $(".dropdown dt a").click(function () {
-                    $(".dropdown dd ul").toggle();
-                });
-
-                $(".dropdown dd ul li a").click(function () {
-                    var text = $(this).html();
-                    $(".dropdown dt a span").html(text);
-                    $(".dropdown dd ul").hide();
-                    $("#result").html("Selected value is: " + getSelectedValue("sample"));
-                });
-
-                function getSelectedValue(id) {
-                    return $("#" + id).find("dt a span.value").html();
-                }
-
-                $(document).bind('click', function (e) {
-                    var $clicked = $(e.target);
-                    if (!$clicked.parents().hasClass("dropdown"))
-                        $(".dropdown dd ul").hide();
-                });
-
-
-                $("#flagSwitcher").click(function () {
-                    $(".dropdown img.flag").toggleClass("flagvisibility");
-                });
-            });
-        </script>-->
+        <!--        <script type="text/javascript">
+                    $(document).ready(function () {
+                        $(".dropdown img.flag").addClass("flagvisibility");
+        
+                        $(".dropdown dt a").click(function () {
+                            $(".dropdown dd ul").toggle();
+                        });
+        
+                        $(".dropdown dd ul li a").click(function () {
+                            var text = $(this).html();
+                            $(".dropdown dt a span").html(text);
+                            $(".dropdown dd ul").hide();
+                            $("#result").html("Selected value is: " + getSelectedValue("sample"));
+                        });
+        
+                        function getSelectedValue(id) {
+                            return $("#" + id).find("dt a span.value").html();
+                        }
+        
+                        $(document).bind('click', function (e) {
+                            var $clicked = $(e.target);
+                            if (!$clicked.parents().hasClass("dropdown"))
+                                $(".dropdown dd ul").hide();
+                        });
+        
+        
+                        $("#flagSwitcher").click(function () {
+                            $(".dropdown img.flag").toggleClass("flagvisibility");
+                        });
+                    });
+                </script>-->
     </head>     
     <body>
         <!--<%@include file="WEB-INF/Header.jspf %>-->
@@ -95,123 +95,150 @@ and open the template in the editor.
                             <script src="js/classie.js"></script>
                             <script src="js/uisearch.js"></script>
                             <script>
-            new UISearch(document.getElementById('sb-search'));
+                                new UISearch(document.getElementById('sb-search'));
                             </script>
                             <!----//search-scripts---->
-<!--                            <ul class="icon1 sub-icon1 profile_img">
-                                <li><a class="active-icon c1" href="#"> </a>
-                                    <ul class="sub-icon1 list">
-                                        <div class="product_control_buttons">
-                                            <a href="#"><img src="images/edit.png" alt=""/></a>
-                                            <a href="#"><img src="images/close_edit.png" alt=""/></a>
-                                        </div>
-                                        <div class="clear"></div>
-                                        <li class="list_img"><img src="images/1.jpg" alt=""/></li>
-                                        <li class="list_desc"><h4><a href="#">velit esse molestie</a></h4><span class="actual">1 x
-                                                $12.00</span></li>
-                                        <div class="login_buttons">
-                                            <div class="check_button"><a href="checkout.html">Check out</a></div>
-                                            <div class="login_button"><a href="login.html">Login</a></div>
-                                            <div class="clear"></div>
-                                        </div>
-                                        <div class="clear"></div>
-                                    </ul>
-                                </li>
-                            </ul>-->
+                            <!--                            <ul class="icon1 sub-icon1 profile_img">
+                                                            <li><a class="active-icon c1" href="#"> </a>
+                                                                <ul class="sub-icon1 list">
+                                                                    <div class="product_control_buttons">
+                                                                        <a href="#"><img src="images/edit.png" alt=""/></a>
+                                                                        <a href="#"><img src="images/close_edit.png" alt=""/></a>
+                                                                    </div>
+                                                                    <div class="clear"></div>
+                                                                    <li class="list_img"><img src="images/1.jpg" alt=""/></li>
+                                                                    <li class="list_desc"><h4><a href="#">velit esse molestie</a></h4><span class="actual">1 x
+                                                                            $12.00</span></li>
+                                                                    <div class="login_buttons">
+                                                                        <div class="check_button"><a href="checkout.html">Check out</a></div>
+                                                                        <div class="login_button"><a href="login.html">Login</a></div>
+                                                                        <div class="clear"></div>
+                                                                    </div>
+                                                                    <div class="clear"></div>
+                                                                </ul>
+                                                            </li>
+                                                        </ul>-->
                         </div>
                     </div>
-                           <div class="clear"></div>
-             </div>
-            </div>
-        </div>
-        
-        
-        <div class="banner">
-            <!-- start slider -->
-            <div id="fwslider">
-                <div class="slider_container">
-                    <div class="slide"> 
-                        <!-- Slide image -->
-                        <img src="images/R21.jpg" class="img-responsive" alt=""/>
-                        <!-- /Slide image -->
-                        <!-- Texts container -->
-                        <div class="slide_content">
-                            <div class="slide_content_wrap">
-                                <!-- Text title -->
-                                <center>
-                                    <h1 class="title">Sports Management System<br>And<br>Ground Booking System</h1>
-
-                                </center>
-                                <!-- /Text title -->
-                                <!-- <div class="button"><a href="#">See Details</a></div> -->
-                            </div>
-                        </div>
-                        <!-- /Texts container -->
-                    </div>
-                    <!-- /Duplicate to create more slides -->
-                    <div class="slide">
-                        <img src="images/chess1.jpg" class="img-responsive" alt=""/>
-                        <div class="slide_content">
-                            <div class="slide_content_wrap">
-                                <center>
-                                    <h1 class="title">Sports Management System<br>And<br>Ground Booking System</h1>
-
-                                </center>                                <!-- <div class="button"><a href="#">See De tails</a></div> -->
-                            </div>
-                        </div>
-                    </div>
-                     <div class="slide">
-                        <img src="images/g21.jpg" class="img-responsive" alt=""/>
-                        <div class="slide_content">
-                            <div class="slide_content_wrap">
-                                <center>
-                                    <h1 class="title">Sports Management System<br>And<br>Ground Booking System</h1>
-
-                                </center>                                <!-- <div class="button"><a href="#">See De tails</a></div> -->
-                            </div>
-                        </div>
-                    </div>
-                    <div class="slide"> 
-                        <!-- Slide image -->
-                        <img src="images/Sw11.jpg" class="img-responsive" alt=""/>
-                        <!-- /Slide image -->
-                        <!-- Texts container -->
-                        <div class="slide_content">
-                            <div class="slide_content_wrap">
-                                <!-- Text title -->
-                                <center>
-                                    <h1 class="title">Sports Management System<br>And<br>Ground Booking System</h1>
-
-                                </center>                                <!-- /Text title -->
-                                <!-- <div class="button"><a href="#">See Details</a></div> -->
-                            </div>
-                        </div>
-                        <!--/slide -->
-                    </div>
-                    <div class="timers"></div>
-                    <div class="slidePrev"><span></span></div>
-                    <div class="slideNext"><span></span></div>
+                    <div class="clear"></div>
                 </div>
-                <!--/slider -->
             </div>
         </div>
+
+        <!--<div class="main-content">-->
+<!--            <section>
+                <div class="col-one">
+                    <div class="container">
+                        <p>court</p>
+
+                    </div>
+                </div>
+            </section>-->
+
+            <section>
+                <div class="col-two">
+                    <center>
+                        <div class="banner">
+                            <!-- start slider -->
+                            <div id="fwslider">
+                                <div class="slider_container">
+                                    <div class="slide"> 
+                                        <!-- Slide image -->
+                                        <img src="images/R21.jpg" class="img-responsive" alt=""/>
+                                        <!-- /Slide image -->
+                                        <!-- Texts container -->
+                                        <div class="slide_content">
+                                            <div class="slide_content_wrap">
+                                                <!-- Text title -->
+                                                <center>
+                                                    <h1 class="title">Sports Management System<br>And<br>Ground Booking System</h1>
+
+                                                </center>
+                                                <!-- /Text title -->
+                                                <!-- <div class="button"><a href="#">See Details</a></div> -->
+                                            </div>
+                                        </div>
+                                        <!-- /Texts container -->
+                                    </div>
+                                    <!-- /Duplicate to create more slides -->
+                                    <div class="slide">
+                                        <img src="images/chess1.jpg" class="img-responsive" alt=""/>
+                                        <div class="slide_content">
+                                            <div class="slide_content_wrap">
+                                                <center>
+                                                    <h1 class="title">Sports Management System<br>And<br>Ground Booking System</h1>
+
+                                                </center>                                <!-- <div class="button"><a href="#">See De tails</a></div> -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="slide">
+                                        <img src="images/g21.jpg" class="img-responsive" alt=""/>
+                                        <div class="slide_content">
+                                            <div class="slide_content_wrap">
+                                                <center>
+                                                    <h1 class="title">Sports Management System<br>And<br>Ground Booking System</h1>
+
+                                                </center>                                <!-- <div class="button"><a href="#">See De tails</a></div> -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="slide"> 
+                                        <!-- Slide image -->
+                                        <img src="images/Sw11.jpg" class="img-responsive" alt=""/>
+                                        <!-- /Slide image -->
+                                        <!-- Texts container -->
+                                        <div class="slide_content">
+                                            <div class="slide_content_wrap">
+                                                <!-- Text title -->
+                                                <center>
+                                                    <h1 class="title">Sports Management System<br>And<br>Ground Booking System</h1>
+
+                                                </center>                                <!-- /Text title -->
+                                                <!-- <div class="button"><a href="#">See Details</a></div> -->
+                                            </div>
+                                        </div>
+                                        <!--/slide -->
+                                    </div>
+                                    <div class="timers"></div>
+                                    <div class="slidePrev"><span></span></div>
+                                    <div class="slideNext"><span></span></div>
+                                </div>
+                                <!--/slider -->
+                            </div>
+                        </div>
+                    </center>
+                </div>
+            </section>
+
+<!--            <section>
+                <div class="col-three">
+                    <div class="container">
+                        <p>ground</p>
+                    </div>
+                </div>
+            </section>-->
+
+        <!--</div>-->
+
         <div class="main">
             <div class="content-top">
                 <h2>Latest News</h2>
                 <p>hendrerit in vulputate velit esse molestie consequat, vel illum dolore</p>
-                <div class="close_but"><i class="close1"> </i></div>
+                <!--<div class="close_but"><i class="close1"> </i></div>-->
                 <ul id="flexiselDemo3">
                     <li><img src="images/SA.jpg" /></li>
                     <li><img src="images/SA1.jpg" /></li>
                     <li><img src="images/board3.jpg" /></li>
                     <li><img src="images/board4.jpg" /></li>
                     <li><img src="images/board5.jpg" /></li>
+
                 </ul>
                 <h3>SnowBoard Extreme Series</h3>
                 <script type="text/javascript">
                     $(window).load(function () {
                         $("#flexiselDemo3").flexisel({
-                            visibleItems: 3,
+                            visibleItems: 5,
                             animationSpeed: 1000,
                             autoPlay: true,
                             autoPlaySpeed: 3000,
@@ -311,7 +338,7 @@ and open the template in the editor.
             </div>
         </div>
     </div>
-   
+
     <div class="footer">
         <div class="container">
             <div class="row">

@@ -1,4 +1,3 @@
-
 package jdbc;
 
 import java.io.IOException;
@@ -9,6 +8,7 @@ import java.sql.PreparedStatement;
 import java.sql.SQLException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -22,7 +22,6 @@ import javax.servlet.http.HttpServletResponse;
 @WebServlet(name = "Registration", urlPatterns = {"/Registration"})
 public class Registration extends HttpServlet {
 
-    
 //    protected void processRequest(HttpServletRequest request, HttpServletResponse response)
 //            throws ServletException, IOException {
 //        response.setContentType("text/html;charset=UTF-8");
@@ -39,15 +38,12 @@ public class Registration extends HttpServlet {
 //            out.println("</html>");
 //        }
 //    }
-
-    
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
 //        processRequest(request, response);
     }
 
-    
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
@@ -55,33 +51,38 @@ public class Registration extends HttpServlet {
         try {
             System.out.print("hello");
 //            processRequest(request, response);
-            
+
             String name = request.getParameter("user");
             String password = request.getParameter("password");
-            
+
             String sql = "insert into registration(name,password) values(?,?)";
             Class.forName("com.mysql.jdbc.Driver");
-            Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/uocsport","Pasindu","");
-             PreparedStatement ps = conn.prepareStatement(sql);
-            ps.setString(1,name);
-            ps.setString(2,password);
+            Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/uocsport", "Pasindu", "");
+            PreparedStatement ps = conn.prepareStatement(sql);
+            ps.setString(1, name);
+            ps.setString(2, password);
             ps.executeUpdate();
-            PrintWriter out =response.getWriter();
-            out.println("You have successfully registered!");
-            
+            PrintWriter out = response.getWriter();
+
+            //            out.println("You have successfully registered!");
+            RequestDispatcher rd = request.getRequestDispatcher("Registration.jsp"); //redirect to the Registration.jsp
+            rd.include(request, response);
+
         } catch (ClassNotFoundException ex) {
             Logger.getLogger(Registration.class.getName()).log(Level.SEVERE, null, ex);
         } catch (SQLException ex) {
             Logger.getLogger(Registration.class.getName()).log(Level.SEVERE, null, ex);
         }
-        
+
     }
 
-    
     @Override
     public String getServletInfo() {
         return "Short description";
     }// </editor-fold>
-    
+
+    private void alert(String you_registered_successfully) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
 
 }

@@ -6,7 +6,7 @@
         
         
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>UOC Sports</title>
+        <title>UOC Sport Management System and Ground booking System</title>
 
         <!-- <title>Free Snow Bootstrap Website Template | Home :: w3layouts</title> -->
 <link href="css/bootstrap.css" rel='stylesheet' type='text/css' />

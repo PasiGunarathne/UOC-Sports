@@ -7,7 +7,7 @@
         
         <jsp:include page="WEB-INF/header.jsp"/>
         
-        <h1>Hello History!</h1>
+        <!--<h1>Hello History!</h1>-->
         <p>
             This page is for history details.. players acheivements and game records etc..
         </p>

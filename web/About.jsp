@@ -6,10 +6,9 @@
 <!--<li><a href="About.jsp">About</a></li>-->
 <jsp:include page="WEB-INF/header.jsp"/>
         
-        <h1>Hello User!</h1>
-    <center>
+<!--     <center>
         This is about us..
-    </center>
+    </center>-->
     
      <div class="main">
       <div class="shop_top">

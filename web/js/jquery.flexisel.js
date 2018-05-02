@@ -7,7 +7,7 @@
 * http://www.9bitstudios.com
 * Free to use and abuse under the MIT license.
 * http://www.opensource.org/licenses/mit-license.php
-*/
+*/  
 
 (function ($) {
 
@@ -74,7 +74,7 @@
 				
     			var innerWidth = listParent.width(); // Set widths
     			itemsWidth = (innerWidth)/itemsVisible;
-    			childSet.width(400);
+    			childSet.width(itemsWidth);
     			childSet.last().insertBefore(childSet.first());
     			childSet.last().insertBefore(childSet.first());
     			object.css({'left' : -itemsWidth}); 
@@ -96,7 +96,7 @@
    			 	object.find("li").addClass("nbs-flexisel-item");
                                 
                                 $(".nbs-flexisel-item > img").css("width", "600px");
-	   			$(".nbs-flexisel-item > img").css("height", "600px");
+	   			$(".nbs-flexisel-item > img").css("height", "400px");
  
    			 	if(settings.setMaxWidthAndHeight) {
 	   			 	var baseWidth = $(".nbs-flexisel-item > img").width();
@@ -269,7 +269,6 @@
 				
 				var innerWidth = listParent.width(); 
 				itemsWidth = (innerWidth)/itemsVisible;
-                                //container width
 				childSet.width(400);
 				object.css({'left' : -itemsWidth});		
 			}			

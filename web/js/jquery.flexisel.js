@@ -95,7 +95,7 @@
    			 	object.wrap("<div class='nbs-flexisel-container'><div class='nbs-flexisel-inner'></div></div>");
    			 	object.find("li").addClass("nbs-flexisel-item");
                                 
-                                $(".nbs-flexisel-item > img").css("width", "600px");
+                                $(".nbs-flexisel-item > img").css("width", "1600px");
 	   			$(".nbs-flexisel-item > img").css("height", "400px");
  
    			 	if(settings.setMaxWidthAndHeight) {
@@ -130,7 +130,7 @@
 					var innerHeight = $(listParent).height(); 
 					
 					itemsWidth = (innerWidth)/itemsVisible;
-					childSet.width(400);
+					childSet.width(300);
 					object.css({'left' : -itemsWidth});
 					
 					var halfArrowHeight = (leftArrow.height())/2;
@@ -269,7 +269,7 @@
 				
 				var innerWidth = listParent.width(); 
 				itemsWidth = (innerWidth)/itemsVisible;
-				childSet.width(400);
+				childSet.width(300);
 				object.css({'left' : -itemsWidth});		
 			}			
         

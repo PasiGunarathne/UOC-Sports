@@ -73,11 +73,12 @@
                         <option value="Faculty of Science">Faculty of Science</option>
                         <option value="Faculty of Management">Faculty of Management</option>
                         <option value="Faculty of Art">Faculty of Art</option>
-                        <option value="Faculty of Art">Faculty of Art</option>
-                        <option value="Faculty of Art">Faculty of Art</option>
-                        <option value="Faculty of Art">Faculty of Art</option>
-                        <option value="Faculty of Art">Faculty of Art</option>
-                        <option value="Faculty of Art">Faculty of Art</option>
+                        <option value="Faculty of Education">Faculty of Education</option>
+                        <option value="Faculty of Medicine">Faculty of Medicine</option>
+                        <option value="Faculty of Nursing">Faculty of Nursing</option>
+                        <option value="Faculty of Technology">Faculty of Technology</option>
+                        <option value="IIM">IIM</option>
+                        <option value="Sripali">Sripali</option>
 
 
 

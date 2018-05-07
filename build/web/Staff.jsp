@@ -9,6 +9,13 @@
 
 
 <!--<a href="Login.jsp">LogOut</a>-->
+<div class="page-top">
+    
+    <center>
+         <h1><%out.println(username);%>'s profile</h1>
+    </center>
+    
+</div>
 
 <div class="content-bottom3">
     <h1>Profile : <%out.println(username);%></h1>

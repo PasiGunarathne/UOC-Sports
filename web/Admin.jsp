@@ -6,7 +6,13 @@
 
 <jsp:include page="WEB-INF/proheader.jsp"/>
 
-
+<div class="page-top">
+    
+    <center>
+         <h1>Admin Page</h1>
+    </center>
+    
+</div>
         <h1>Hello ADMIN!</h1>
         <div>You know who I'm?</div>
         

@@ -7,7 +7,14 @@
         
 <jsp:include page="WEB-INF/header.jsp"/>
         
-        <!--<h1>Hello Events!</h1>-->
+        <div class="page-top">
+    
+    <center>
+         <h1>Event Page</h1>
+    </center>
+    
+</div>
+<!--<h1>Hello Events!</h1>-->
         <p>
             This page is for events..
         </p>

@@ -7,7 +7,7 @@
 * http://www.9bitstudios.com
 * Free to use and abuse under the MIT license.
 * http://www.opensource.org/licenses/mit-license.php
-*/
+*/  
 
 (function ($) {
 
@@ -19,7 +19,7 @@
     		autoPlay: false,
     		autoPlaySpeed: 3000,    		
     		pauseOnHover: true,
-			setMaxWidthAndHeight: false,
+		setMaxWidthAndHeight: false,
     		enableResponsiveBreakpoints: false,
     		responsiveBreakpoints: { 
 	    		portrait: { 
@@ -94,9 +94,13 @@
    			 	object.addClass("nbs-flexisel-ul");
    			 	object.wrap("<div class='nbs-flexisel-container'><div class='nbs-flexisel-inner'></div></div>");
    			 	object.find("li").addClass("nbs-flexisel-item");
+                                
+                                $(".nbs-flexisel-item > img").css("width", "1600px");
+	   			$(".nbs-flexisel-item > img").css("height", "400px");
  
    			 	if(settings.setMaxWidthAndHeight) {
 	   			 	var baseWidth = $(".nbs-flexisel-item > img").width();
+                                        console.log("Width : " +baseWidth)
 	   			 	var baseHeight = $(".nbs-flexisel-item > img").height();
 	   			 	$(".nbs-flexisel-item > img").css("max-width", baseWidth);
 	   			 	$(".nbs-flexisel-item > img").css("max-height", baseHeight);
@@ -126,8 +130,7 @@
 					var innerHeight = $(listParent).height(); 
 					
 					itemsWidth = (innerWidth)/itemsVisible;
-					
-					childSet.width(itemsWidth);
+					childSet.width(300);
 					object.css({'left' : -itemsWidth});
 					
 					var halfArrowHeight = (leftArrow.height())/2;
@@ -266,7 +269,7 @@
 				
 				var innerWidth = listParent.width(); 
 				itemsWidth = (innerWidth)/itemsVisible;
-				childSet.width(itemsWidth);
+				childSet.width(300);
 				object.css({'left' : -itemsWidth});		
 			}			
         

@@ -72,19 +72,28 @@
     height:100%;
 }
 #fwslider .slide_content_wrap { /* Slider Text Content Container Style */
-    max-width: 600px;
+    max-width: 1000px;
     margin: 12% auto;
 }
 #fwslider .title {  /* Slider Title Style */
     color: #FFF;
-    font-size: 5em;
+    font-size: 3em;
     padding-top: 5%;
     font-style: normal;
     text-transform: uppercase;
     border: none;
-    font-weight: 800;
+    font-weight: 500;
     line-height: 1.3em;
     margin-bottom: 5%;
+}
+
+.col-one{
+    margin-left: 0px;
+    width: 10px;
+}
+.col-three{
+    margin-right: 20px;
+    width: 220px;
 }
 /* ------------------------------- 4. Media Query Max Width 1300, Min Width 720 ------------------------------- */
 /* ------------------------------- 5. Media Query Max Width 719 ------------------------------- */

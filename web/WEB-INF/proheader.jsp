@@ -82,7 +82,7 @@ and open the template in the editor.
                                 <li><a href="team.html">Team</a></li>
                                 <li><a href="experiance.html">Events</a></li>
                                 <li><a href="experiance.html">Experiance</a></li>
-                                <li><a href="Registration.jsp">Register</a></li>
+                                <!--<li><a href="Registration.jsp">Register</a></li>-->
                                 <li><a href="Login.jsp">Logout</a></li>                              
                                 <div class="clear"></div>
                             </ul>

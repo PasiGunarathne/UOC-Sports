@@ -3,7 +3,7 @@
     Created on : Mar 26, 2018, 8:43:01 PM
     Author     : Pasindu
 --%>
-<jsp:include page="WEB-INF/header.jsp"/>
+<jsp:include page="WEB-INF/proheader.jsp"/>
 
 
 <!--<center>
@@ -19,6 +19,13 @@
     </form>
 
     </div>-->
+<!--<div class="page-top">
+
+    <center>
+        <h1><a href="Admin.jsp">Admin Page</a></h1>
+    </center>
+
+</div>-->
 
 
 

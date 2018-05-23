@@ -57,8 +57,8 @@ body a{
     background:#fff;
     color:#000;
 } 
-#nav .current a{
-    color: black ;
+#nav .active a{
+    color: gold ;
 }
 .toggleMenu {
     display:  none;
@@ -78,6 +78,82 @@ body a{
 .page-top{
     background:#ccccb3;
     padding: 4% 0;
+}
+
+/*.bodylogin{
+    margin: 0;
+    padding: 0;
+    background: url(../images/Un.jpg);
+    background: url(../images/Fc.jpg)no-repeat center top;
+    background-size: cover;
+    background-position: center;
+    font-family: sans-serif;    
+}*/
+.bodylogin{
+    width:100%;
+    background: url(../images/Sw11.jpg)no-repeat center top;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-position: center;
+    background-size: 100% 100%;
+    height:100%;
+    padding:30% 0;
+    font-family: sans-serif;
+}
+
+.login-box{
+    width: 400px;
+    height: 600px;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    top: 35%;
+    left: 40%;
+    position: absolute;
+    trasform: translate(-50%, -50%);
+    box-sizing: border-box;
+    padding: 70px 30px;
+
+}
+.login-box p{
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+}
+.login-box input{
+    width: 100%;
+    margin-bottom: 20px;
+    
+}
+
+.login-box input[type="text"], input[type="password"]
+{
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: #fff;
+    font-size: 16px;
+    
+}
+.login-box input[type="submit"]{
+    border: none;
+    outline: none;
+    height: 40px;
+    background: #1c8adb;
+}
+
+.avatar{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    position: absolute;
+    top: -50px;
+    left: calc(45% - 50px);
+
+
 }
 @media screen and (max-width:800px) {
     .active {
@@ -556,7 +632,7 @@ li.list_desc h4 a:hover{
 }
 .content-bottom{
     width:100%;
-    background: url(../images/F.jpg)no-repeat center top;
+    background: url(../images/SA2.jpg)no-repeat center top;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;

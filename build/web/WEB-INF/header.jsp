@@ -72,8 +72,9 @@
                                     <li><a href="index.html">Home</a></li>
                                     <li><a href="About.jsp">About</a></li>
                                     <li><a href="History.jsp">History</a></li>
+                                    <li><a href="Sports.jsp">Sports</a></li>
                                     <li><a href="Events.jsp">Events</a></li>
-                                    <!--<li><a href="Registration.jsp">Register</a></li>-->
+                                    <li><a href="Registration.jsp">Register</a></li>
                                     <li><a href="Login.jsp">Login</a></li>                              
                                     <div class="clear"></div>
                                 </ul>

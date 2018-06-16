@@ -3,7 +3,7 @@
     Created on : Mar 26, 2018, 8:43:01 PM
     Author     : Pasindu
 --%>
-<jsp:include page="WEB-INF/proheader.jsp"/>
+<jsp:include page="WEB-INF/header.jsp"/>
 
 
 <!--<center>
@@ -39,8 +39,8 @@
                             <div class="col-md-12 contact">-->
         <form method="post" action="Registration">
             <div class="to">
-                <p>Name :</p> <input type="text" name="user" required="required" class="text" value="Name" onfocus="this.value = '';" onblur=" if (this.value == '')">
-                <p>Password :</p> <input type="text" name="password" required="required" class="text" value="Enter your password" onfocus="this.value = '';" onblur="if (this.value == '')">
+                <p>Name :</p> <input type="text" name="user" required="required" class="text" value="" onfocus="this.value = '';" onblur=" if (this.value == '')">
+                <p>Password :</p> <input type="text" name="password" required="required" class="text" value="" onfocus="this.value = '';" onblur="if (this.value == '')">
                 <p>Subject :</p><input type="text" name="user" required="required" class="text" value="Subject" onfocus="this.value = '';" onblur="if (this.value == '') /*{this.value = 'Subject';}*/">
                 <input type="text" name="user" required="required" class="text" value="Subject" onfocus="this.value = '';" onblur="if (this.value == '')">
                 <input type="text" name="user" required="required" class="text" value="Subject" onfocus="this.value = '';" onblur="if (this.value == '')">
@@ -56,13 +56,15 @@
                 </div>
 
             </div>
-            <div class="clear"></div>
-        </form>
-        <script>
+            <script>
             function Func() {
                 alert("You registered successfully!");
             }
         </script>
+            <div class="clear"></div>
+            
+        </form>
+        
     </div>
 </div>
 <!--</div>

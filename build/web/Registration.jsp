@@ -41,14 +41,14 @@
             <div class="to">
                 <p>Name :</p> <input type="text" name="user" required="required" class="text" value="" onfocus="this.value = '';" onblur=" if (this.value == '')">
                 <p>Password :</p> <input type="text" name="password" required="required" class="text" value="" onfocus="this.value = '';" onblur="if (this.value == '')">
-                <p>Subject :</p><input type="text" name="user" required="required" class="text" value="Subject" onfocus="this.value = '';" onblur="if (this.value == '') /*{this.value = 'Subject';}*/">
+<!--                <p>Subject :</p><input type="text" name="user" required="required" class="text" value="Subject" onfocus="this.value = '';" onblur="if (this.value == '') /*{this.value = 'Subject';}*/">
                 <input type="text" name="user" required="required" class="text" value="Subject" onfocus="this.value = '';" onblur="if (this.value == '')">
                 <input type="text" name="user" required="required" class="text" value="Subject" onfocus="this.value = '';" onblur="if (this.value == '')">
 
             </div>
             <div class="text">
                 <p>Message :</p><textarea value="Message:" onfocus="this.value = '';" onblur="if (this.value == '')
-                                          ">Message:</textarea>
+                                          ">Message:</textarea>-->
                 <!--Need to delete those default values-->
                 <div class="form-submit">
                     <input name="submit" type="submit" id="submit" value="SUBMIT" onclick="Func() "><br>

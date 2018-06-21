@@ -15,7 +15,7 @@
 
 </div>
 <p>
-    This page is for history details.. players acheivements and game records etc..
+<!--    This page is for history details.. players acheivements and game records etc..-->
 </p>
 
 

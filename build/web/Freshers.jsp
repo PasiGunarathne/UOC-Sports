@@ -16,14 +16,14 @@
                 <th><p>|</p></th>
                 <th><p>UCSC</p></th>
                 <th><p>Faculty of Science</p></th>
-                <th><p>Faculty of Medicine</p></th>
                 <th><p>Faculty of Management</p></th>
-                <th><p>Faculty of Nursing</p></th>
+                <th><p>Faculty of Arts</p></th>
+                <th><p>Faculty of Medicine</p></th>
                 <th><p>Faculty of Law</p></th>
-                <th><p>Faculty of Agriculture</p></th>
                 <th><p>Sripali Mandapaya</p></th>
                 <th><p>MMI</p></th>
-                <th><p>Faulty of Arts</p></th>
+                <th><p>Faulty of Nursing</p></th>
+                <th><p>Faculty of Technology</p></th>
             </tr>
             <tr>
                 <td><p>Volleyball (Men)</p></td>

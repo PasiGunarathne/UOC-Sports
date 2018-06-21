@@ -54,7 +54,6 @@ public class Registration extends HttpServlet {
 
             String name = request.getParameter("user");
             String password = request.getParameter("password");
-
             String sql = "insert into registration(name,password) values(?,?)";
             Class.forName("com.mysql.jdbc.Driver");
             Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/uocsport", "Pasindu", "");
@@ -64,7 +63,7 @@ public class Registration extends HttpServlet {
             ps.executeUpdate();
             PrintWriter out = response.getWriter();
 
-            //            out.println("You have successfully registered!");
+//                        out.println("You have successfully registered!");
             RequestDispatcher rd = request.getRequestDispatcher("Registration.jsp"); //redirect to the Registration.jsp
             rd.include(request, response);
 

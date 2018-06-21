@@ -75,13 +75,14 @@
                             <div class="menu">
                                 <a class="toggleMenu" href="#"><img src="images/nav.png" alt="" /></a>
                                 <ul class="nav" id="nav">
-                                    <li><a href="../index.html">Home</a></li>
+                                     <li><a href="../index.html">Home</a></li>
                                     <li><a href="../About.jsp">About</a></li>
-                                    <li><a href="../History.jsp">History</a></li>
                                     <li><a href="../Sports.jsp">Sports</a></li>
-                                    <li><a href="../Events.jsp">Events</a></li>
-                                    <li><a href="../Registration.jsp">Register</a></li>
-                                    <li><a href="../Login.jsp">Login</a></li>                              
+
+                                    <li><a href="../Calendar.jsp">Calendar</a></li>
+                                    <li><a href="../Forum.jsp">Forum</a></li>
+                                    <!--<li><a href="../Registration.jsp">Register</a></li>-->
+                                    <li><a href="../Login.jsp">Logout</a></li>                        
                                     <div class="clear"></div>
                                 </ul>
                                 <script type="text/javascript" src="js/responsive-nav.js"></script>

@@ -81,7 +81,7 @@ public class Player extends HttpServlet {
             PreparedStatement ps = conn.prepareStatement(sql);
             ps.setString(1, full_name);
             ps.setInt(2, reg_no);
-            ps.setString(3, n_id);
+            ps.setString(3,n_id);
             ps.setInt(4, contact_no);
             ps.setInt(5, age);
             ps.setString(6, email_address);

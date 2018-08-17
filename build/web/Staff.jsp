@@ -5,18 +5,11 @@
 --%>
 
 <jsp:include page="WEB-INF/proheader.jsp"/>
-<%String username = request.getParameter("user"); %>
-<%String x = dbName%>
-
-
-<!--<a href="Login.jsp">LogOut</a>-->
-<div class="page-top">
-
-    <center>
-        <!--<h1><% //out.println(username);%>'s profile</h1>-->
-    </center>
-
-</div>
+<%
+    if(session.getAttribute("username")== null){
+        response.sendRedirect("Login.jsp");
+    }
+%>
 
 <div class="content-bottom3">
     <!--<h1>Profile : <% //out.println(username);%></h1>-->

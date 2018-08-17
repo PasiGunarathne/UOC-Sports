@@ -6,14 +6,13 @@
 
 <jsp:include page="WEB-INF/proheader.jsp"/>
 
+<%
+    if(session.getAttribute("username")== null){
+        response.sendRedirect("Login.jsp");
+    }
+%>
+
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<!--<div class="page-top">
-
-    <center>
-        <h1><a href="Admin.jsp">Admin Page</a></h1>
-    </center>
-
-</div>-->
 
 <br>
 

@@ -15,6 +15,7 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
 /**
  *
@@ -72,12 +73,19 @@ public class Login extends HttpServlet {
             }
             if (name.equals(dbName) && password.equals(dbPassword)) {
                 if (name.equals("admin")) {
-                    RequestDispatcher rd = request.getRequestDispatcher("Admin.jsp");
-                    rd.include(request, response);
-                }
-                else {
-                    RequestDispatcher rd = request.getRequestDispatcher("Staff.jsp");
-                    rd.include(request, response);
+                    HttpSession session = request.getSession();
+                    session.setAttribute("username", name);
+//                    RequestDispatcher rd = request.getRequestDispatcher("Admin.jsp");
+//                    rd.include(request, response);
+                    response.sendRedirect("Admin.jsp");
+
+                } else {
+                    HttpSession session = request.getSession();
+                    session.setAttribute("username", name);
+//                    RequestDispatcher rd = request.getRequestDispatcher("Staff.jsp");
+//                    rd.include(request, response);
+                    response.sendRedirect("Staff.jsp");
+
                 }
 //                if (name.equals("Pasindu")) {
 //                    RequestDispatcher rd = request.getRequestDispatcher("Staff.jsp");

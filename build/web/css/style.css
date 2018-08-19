@@ -36,7 +36,7 @@ body a{
     text-align: left;
     padding: 3%;
     font-size: 20px;
-    
+
 }
 
 s-container h1{
@@ -53,7 +53,7 @@ s-container h1{
     padding: 3%;
     font-size: 20px;
     margin-top: 60%;
-   
+
 }
 
 .logo{
@@ -143,7 +143,7 @@ tr:hover {background-color:#f5f5f5;}
 .col-m-three{
     width: 20%;
     float: left;
-    
+
 }
 
 /*.bodylogin{
@@ -190,7 +190,7 @@ tr:hover {background-color:#f5f5f5;}
 .login-box input{
     width: 100%;
     margin-bottom: 20px;
-    
+
 }
 
 .login-box input[type="text"], input[type="password"]
@@ -202,7 +202,7 @@ tr:hover {background-color:#f5f5f5;}
     height: 40px;
     color: #fff;
     font-size: 16px;
-    
+
 }
 .login-box input[type="submit"]{
     border: none;
@@ -752,7 +752,7 @@ li.list_desc h4 a:hover{
     background-position: center;
     background-size: 100% 100%;
     height:100%;
-    padding:15% 0;
+    padding:5% 0;
 }
 
 .content-m-bottom{
@@ -768,10 +768,19 @@ li.list_desc h4 a:hover{
     padding:1% 0;
 }
 
+.breadcrumb{
+    padding: 1% ;
+    width: 90%;
+    margin-left: 5%;
+
+}
+
 .cont{
     width: 100%;
-    padding: 0%;
+    padding: 0% ;
     
+
+
 }
 /*.cont h1{
     font-size: 3em;

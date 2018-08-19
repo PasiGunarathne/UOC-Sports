@@ -85,15 +85,15 @@ and open the template in the editor.
                                     <li><a href="Calendar.jsp">Calendar</a></li>
                                     <li><a href="Forum.jsp">Forum</a></li>
                                     <!--<li><a href="Registration.jsp">Register</a></li>-->
-                                    <!--<li><a href="Login.jsp">Logout</a></li>-->
+                                    <li><a href="Logout">Logout</a></li>
 
-                                    <li><form method="post" action="Logout">
-                                            <!--<li><a href="Login.jsp">RLogout</a></li>-->   
+<!--                                    <li><form method="post" action="Logout">
+                                            <li><a href="Login.jsp">RLogout</a></li>   
                                             <li><input type="submit" value="Logout"></li>   
                                             <li><button></button></li>   
 
 
-                                        </form></li>
+                                        </form></li>-->
 
                                     <div class="clear"></div>
                                 </ul>
@@ -116,19 +116,9 @@ and open the template in the editor.
                                                                                 <i class="material-icons">Profile</i>
                                                                             </a></li>-->
                                                               <!--<a href="Staff.jsp">${username}</a>-->
-                                    <!--<li><a href="ProFilter.jsp">Profile</a></li>-->
+                                    <li><a href="ProFilter.jsp">Profile</a></li>
 
 
-                                    <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
-                                        <button type="button" class="btn btn-primary">Primary</button>
-                                        <div class="btn-group" role="group">
-                                            <button id="btnGroupDrop1" type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
-                                            <div class="dropdown-menu" aria-labelledby="btnGroupDrop1" x-placement="bottom-start" style="position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(0px, 37px, 0px);">
-                                                <a class="dropdown-item" href="#">Dropdown link</a>
-                                                <a class="dropdown-item" href="#">Dropdown link</a>
-                                            </div>
-                                        </div>
-                                    </div>
 <!--                                    <li class="nav-item dropdown">
                                         <a class="nav-link dropdown-toggle" id="dropdown1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown1</a>
                                         <ul class="dropdown-menu" aria-labelledby="dropdown1">

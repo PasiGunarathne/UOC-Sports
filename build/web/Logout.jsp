@@ -12,13 +12,17 @@
         <title>JSP Page</title>
     </head>
     <body>
-        <h1>Hello World!</h1>
+<!--        <h1>Hello World!</h1>
+        <form method="post" action="Logout">
+                                            <li><a href="Login.jsp">RLogout</a></li>   
+                                            <li><input type="submit" value="Logout"></li>   
+                                            <li><button></button></li>   
+
+
+                                        </form>-->
         <%
-        HttpSession session = request.getSession();
-        session.removeAttribute("username");
-        session.removeAttribute("Adusername");
-        session.invalidate();
-        response.sendRedirect("Login.jsp");
+     
+        response.sendRedirect("Logout");
         %>
     </body>
 </html>

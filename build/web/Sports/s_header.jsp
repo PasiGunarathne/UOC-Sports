@@ -80,9 +80,9 @@
                                     <li><a href="../Sports.jsp">Sports</a></li>
 
                                     <li><a href="../Calendar.jsp">Calendar</a></li>
-                                    <li><a href="../Forum.jsp">Forum</a></li>
+                                    <!--<li><a href="../Forum.jsp">Forum</a></li>-->
                                     <!--<li><a href="../Registration.jsp">Register</a></li>-->
-                                    <li><a href="../Login.jsp">Logout</a></li>                        
+                                    <li><a href="../Login.jsp">Login</a></li>                        
                                     <div class="clear"></div>
                                 </ul>
                                 <script type="text/javascript" src="js/responsive-nav.js"></script>

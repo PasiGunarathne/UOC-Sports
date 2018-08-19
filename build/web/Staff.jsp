@@ -10,6 +10,23 @@
         response.sendRedirect("Login.jsp");
     }
 %>
+<!--<div class="content-bottom3">-->
+<!--    <ol class="breadcrumb">
+  <li class="breadcrumb-item active">Home</li>
+</ol>
+<ol class="breadcrumb">
+  <li class="breadcrumb-item"><a href="#">Home</a></li>
+  <li class="breadcrumb-item active">Library</li>
+</ol>-->
+<br>
+<!--<div class="container">-->
+    <ol class="breadcrumb">
+  <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+  <li class="breadcrumb-item"><a href="Staff.jsp">Staff</a></li>
+  <li class="breadcrumb-item active">Data</li>
+</ol>
+<!--</div>-->
+<!--</div>-->
 
 <div class="content-bottom3">
     <!--<h1>Profile : <% //out.println(username);%></h1>-->

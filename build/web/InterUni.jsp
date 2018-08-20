@@ -1,9 +1,17 @@
 <%-- 
-    Document   : Freshers
-    Created on : Jun 17, 2018, 6:25:24 AM
+    Document   : InterUni
+    Created on : Aug 20, 2018, 5:39:02 AM
     Author     : Pasindu
 --%>
 
+<%-- 
+    Document   : Faculty
+    Created on : Aug 20, 2018, 5:12:00 AM
+    Author     : Pasindu
+--%>
+
+
+<%@page import="jdbc.Tournament"%>
 <%@page import="java.util.Collections"%>
 <%@page import="java.util.ArrayList"%>
 <%@page import="java.sql.SQLException"%>
@@ -19,22 +27,10 @@
 
 <ol class="breadcrumb">
     <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-    <li class="breadcrumb-item"><a href="Freshers.jsp">Freshers' meet</a></li>
+    <li class="breadcrumb-item"><a href="InterUni.jsp">Inter University Championship</a></li>
     <li class="breadcrumb-item active">Data</li>
 </ol>
 
-<!--<div class="container">
-<div class="dropdown">
-  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-    Dropdown button
-  </button>
-  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-    <a class="dropdown-item" href="#">Action</a>
-    <a class="dropdown-item" href="#">Another action</a>
-    <a class="dropdown-item" href="#">Something else here</a>
-  </div>
-</div>
-</div>-->
 
 <center>
     <br>
@@ -42,16 +38,14 @@
     <div class="chart">
         <canvas id="myChart"></canvas>
 
-
-
     </div>
 
     <div class="s-container">
-        <h1>Summary of Freshers' meet 2018</h1>
+        <h1>Summary of Inter University Championship 2018</h1>
         <%
             try {
-                String sql = "select * from tournament_1 where year='2018' and type='Freshers' ";
-                String sql2 = "SELECT SUM(ucsc),SUM(fos),SUM(mgt),SUM(art),SUM(med),SUM(law),SUM(sripali),SUM(mmi),SUM(nur),SUM(tech) FROM tournament_1 WHERE year='2018' and type='Freshers';";
+                String sql = "select * from tournament_2 where year='2018' and type='uni' ";
+                String sql2 = "SELECT SUM(uoc),SUM(uom),SUM(uor),SUM(uob),SUM(uoj),SUM(ujp),SUM(uou),SUM(uok),SUM(uop),SUM(urj) FROM tournament_2 WHERE year='2018' and type='uni';";
 
                 Class.forName("com.mysql.jdbc.Driver");
                 Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/uocsport", "Pasindu", "");
@@ -235,9 +229,9 @@
 //              
                 conn.close();
             } catch (ClassNotFoundException ex) {
-                Logger.getLogger(Registration.class.getName()).log(Level.SEVERE, null, ex);
+                Logger.getLogger(Tournament.class.getName()).log(Level.SEVERE, null, ex);
             } catch (SQLException ex) {
-                Logger.getLogger(Registration.class.getName()).log(Level.SEVERE, null, ex);
+                Logger.getLogger(Tournament.class.getName()).log(Level.SEVERE, null, ex);
             }
 
 

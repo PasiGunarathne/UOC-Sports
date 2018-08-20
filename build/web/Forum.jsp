@@ -28,13 +28,7 @@
         <div id="new-problem" class="tabcontent">
             <form method="post" action="Forum">
                 <div class="to">
-                    <br>
-                    <!--Faculty of medicine	Faculty of law	Sripali mandapaya	MMI	Year	type-->
 
-                    <!--                    <p>Sport : <input type="text" name="name" required="required" class="text1" value="full name" onfocus="this.value = '';" onblur="if (this.value == '')">
-                                        </p>
-                    -->
-                    <br>
                     <table>
 
                         <tr>
@@ -91,7 +85,7 @@
 
                     </table>
                     <label>Request in brief</label>
-                    <input type="text" name="request">
+                    <input type="text" name="reqInBrief">
                     <br>
 
                     <label>Problem Description</label>
@@ -105,9 +99,9 @@
                 <br><br>
                 <div class="text">
                     <p>Date :
-                        <input type="date" name="day"></p>
+                        <input type="date" name="date"></p>
                     <br><br>
-                    <p>Faculty: <select name="type">
+                    <p>Faculty: <select name="faculty">
                             <option>Select a faculty</option>
                             <option value="UCSC">UCSC</option>
                             <option value="Faculty of Science">Faculty of Science</option>
@@ -203,11 +197,17 @@
                         <td></td>
 
                     </table>
-                    <label>Venue</label>
-                    <input type="text" name="request">
+                    <label>Event Name:</label>
+                    <input type="text" name="eventName">
+                    <br>
+                    <label>Venue:</label>
+                    <input type="text" name="venue">
+                    <br>
+                    <label>Budget:</label>
+                    <input type="text" name="budget">
                     <br>
 
-                    <label>Problem Description</label>
+                    <label>Description:</label>
                     <br>
                     <textarea rows="4" cols="71" name="description">
 
@@ -218,9 +218,9 @@
                 <br><br>
                 <div class="text">
                     <p>Date :
-                        <input type="date" name="day"></p>
+                        <input type="date" name="date"></p>
                     <br><br>
-                    <p>Faculty: <select name="type">
+                    <p>Faculty: <select name="faculty">
                             <option>Select a faculty</option>
                             <option value="UCSC">UCSC</option>
                             <option value="Faculty of Science">Faculty of Science</option>

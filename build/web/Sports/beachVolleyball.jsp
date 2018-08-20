@@ -5,5 +5,13 @@
 --%>
 
 <jsp:include page="s_header.jsp"/>
-<h1>Hello World!</h1>
+<br>
+  <ol class="breadcrumb">
+  <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+    <li class="breadcrumb-item"><a href="../Sports.jsp">Sports</a></li>
+  <li class="breadcrumb-item active">Beach Volleyball</li>
+</ol>
+
+
+
 <jsp:include page="../WEB-INF/footer.jsp"/>

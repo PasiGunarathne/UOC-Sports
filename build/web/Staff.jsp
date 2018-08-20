@@ -186,7 +186,6 @@
                         <tr>
                             <td><p>University of Colombo School of Computing :</p></td>
                             <td><p><select name="ucsc">
-                                        <option>Select a point</option>
                                         <option value="0">not participated</option>
                                         <option value="1">1</option>
                                         <option value="3">3</option>
@@ -199,7 +198,6 @@
                         <tr>
                             <td><p>Faculty of Science : </p></td>
                             <td><p><select name="fos">
-                                        <option>Select a point</option>
                                         <option value="0">not participated</option>
                                         <option value="1">1</option>
                                         <option value="3">3</option>
@@ -212,7 +210,6 @@
                         <tr>
                             <td><p>Faculty of Management : </p></td>
                             <td><p><select name="mgt">
-                                        <option>Select a point</option>
                                         <option value="0">not participated</option>
                                         <option value="1">1</option>
                                         <option value="3">3</option>
@@ -225,7 +222,6 @@
                         <tr>
                             <td><p>Faculty of Art : </p></td>
                             <td><p><select name="art">
-                                        <option>Select a point</option>
                                         <option value="0">not participated</option>
                                         <option value="1">1</option>
                                         <option value="3">3</option>
@@ -237,7 +233,6 @@
                         <tr>
                             <td><p>Faculty of Medicine : </p></td>
                             <td><p><select name="med">
-                                        <option>Select a point</option>
                                         <option value="0">not participated</option>
                                         <option value="1">1</option>
                                         <option value="3">3</option>
@@ -250,7 +245,6 @@
                         <tr>
                             <td><p>Faculty of Law : </p></td>
                             <td><p><select name="law">
-                                        <option>Select a point</option>
                                         <option value="0">not participated</option>
                                         <option value="1">1</option>
                                         <option value="3">3</option>
@@ -262,7 +256,6 @@
                         <tr>
                             <td><p>Sripali Mandapaya : </p></td>
                             <td><p><select name="spl">
-                                        <option>Select a point</option>
                                         <option value="0">not participated</option>
                                         <option value="1">1</option>
                                         <option value="3">3</option>
@@ -275,7 +268,6 @@
                         <tr>
                             <td><p>MMI : </p></td>
                             <td><p><select name="mmi">
-                                        <option>Select a point</option>
                                         <option value="0">not participated</option>
                                         <option value="1">1</option>
                                         <option value="3">3</option>
@@ -287,7 +279,6 @@
                         <tr>
                             <td><p>Faculty of Nursing : </p></td>
                             <td><p><select name="nur">
-                                        <option>Select a point</option>
                                         <option value="0">not participated</option>
                                         <option value="1">1</option>
                                         <option value="3">3</option>
@@ -300,7 +291,6 @@
                         <tr>
                             <td><p>Faculty of Technology : </p></td>
                             <td><p><select name="tech">
-                                        <option>Select a point</option>
                                         <option value="0">not participated</option>
                                         <option value="1">1</option>
                                         <option value="3">3</option>
@@ -408,7 +398,7 @@
 
         <!--inter uni/others results-->
         <div id="results2" class="tabcontent">
-            <form method="post" action="Tournament">
+            <form method="post" action="Tournament2">
                 <div class="to">
                     <br>
                     <!--Faculty of medicine	Faculty of law	Sripali mandapaya	MMI	Year	type-->
@@ -421,12 +411,11 @@
                         <tr>
                             <td><p>University of Colombo  :</p></td>
                             <td><p><select name="uoc">
-                                        <option>Select a point</option>
-                                        <option value="7">7</option>
-                                        <option value="5">5</option>
-                                        <option value="3">3</option>
+                                        <option value="0">not participated</option>
                                         <option value="1">1</option>
-                                        <option value="-">not participated</option>
+                                        <option value="3">3</option>
+                                        <option value="5">5</option>
+                                        <option value="7">7</option>
 
                                     </select></p></td>
                         </tr>
@@ -434,12 +423,11 @@
                         <tr>
                             <td><p>University of Moratuwa : </p></td>
                             <td><p><select name="uom">
-                                        <option>Select a point</option>
-                                        <option value="7">7</option>
-                                        <option value="5">5</option>
-                                        <option value="3">3</option>
+                                        <option value="0">not participated</option>
                                         <option value="1">1</option>
-                                        <option value="-">not participated</option>
+                                        <option value="3">3</option>
+                                        <option value="5">5</option>
+                                        <option value="7">7</option>
 
                                     </select></p></td>
                         </tr>
@@ -447,12 +435,11 @@
                         <tr>
                             <td><p>University of Ruhuna : </p></td>
                             <td><p><select name="uor">
-                                        <option>Select a point</option>
-                                        <option value="7">7</option>
-                                        <option value="5">5</option>
-                                        <option value="3">3</option>
+                                        <option value="0">not participated</option>
                                         <option value="1">1</option>
-                                        <option value="-">not participated</option>
+                                        <option value="3">3</option>
+                                        <option value="5">5</option>
+                                        <option value="7">7</option>
 
                                     </select></p></td>
                         </tr>
@@ -460,12 +447,11 @@
                         <tr>
                             <td><p>University of Sabaragamuwa : </p></td>
                             <td><p><select name="uob">
-                                        <option>Select a point</option>
-                                        <option value="7">7</option>
-                                        <option value="5">5</option>
-                                        <option value="3">3</option>
+                                        <option value="0">not participated</option>
                                         <option value="1">1</option>
-                                        <option value="-">not participated</option>
+                                        <option value="3">3</option>
+                                        <option value="5">5</option>
+                                        <option value="7">7</option>
 
                                     </select></p></td>
                         </tr>
@@ -473,80 +459,75 @@
                         <tr>
                             <td><p>University of Jaffna </p></td>
                             <td><p><select name="uoj">
-                                        <option>Select a point</option>
-                                        <option value="7">7</option>
-                                        <option value="5">5</option>
-                                        <option value="3">3</option>
+                                        <option value="0">not participated</option>
                                         <option value="1">1</option>
-                                        <option value="-">not participated</option>
-
+                                        <option value="3">3</option>
+                                        <option value="5">5</option>
+                                        <option value="7">7</option>
                                     </select></p></td>
                         </tr>
                         <td></td>
                         <tr>
                             <td><p>University of Sri Jayawadenapura : </p></td>
-                            <td><p><select name="usj">
-                                        <option>Select a point</option>
-                                        <option value="7">7</option>
-                                        <option value="5">5</option>
-                                        <option value="3">3</option>
+                            <td><p><select name="ujp">
+                                        <option value="0">not participated</option>
                                         <option value="1">1</option>
-                                        <option value="-">not participated</option>
+                                        <option value="3">3</option>
+                                        <option value="5">5</option>
+                                        <option value="7">7</option>
 
                                     </select></p></td>
                         </tr>
                         <td></td>
                         <tr>
-                            <td><p>University of South Eastern : </p></td>
-                            <td><p><select name="use">
-                                        <option>Select a point</option>
-                                        <option value="7">7</option>
-                                        <option value="5">5</option>
-                                        <option value="3">3</option>
+                            <td><p>University of Uva : </p></td>
+                            <td><p><select name="uou">
+                                        <option value="0">not participated</option>
                                         <option value="1">1</option>
-                                        <option value="-">not participated</option>
+                                        <option value="3">3</option>
+                                        <option value="5">5</option>
+                                        <option value="7">7</option>
 
                                     </select></p></td>
                         </tr>
                         <td></td>
                         <tr>
-                            <td><p>MMI : </p></td>
-                            <td><p><select name="mmi">
-                                        <option>Select a point</option>
-                                        <option value="7">7</option>
-                                        <option value="5">5</option>
-                                        <option value="3">3</option>
+                            <td><p>University of Kelaniya : </p></td>
+                            <td><p><select name="uok">
+                                        <option value="0">not participated</option>
                                         <option value="1">1</option>
-                                        <option value="-">not participated</option>
+                                        <option value="3">3</option>
+                                        <option value="5">5</option>
+                                        <option value="7">7</option>
 
                                     </select></p></td>
                         </tr>
                         <td></td>
                         <tr>
-                            <td><p>Faculty of Nursing : </p></td>
-                            <td><p><select name="nur">
-                                        <option>Select a point</option>
-                                        <option value="7">7</option>
-                                        <option value="5">5</option>
-                                        <option value="3">3</option>
+                            <td><p>University of Peradeniya : </p></td>
+                            <td><p><select name="uop">
+                                        <option value="0">not participated</option>
                                         <option value="1">1</option>
-                                        <option value="-">not participated</option>
+                                        <option value="3">3</option>
+                                        <option value="5">5</option>
+                                        <option value="7">7</option>
 
                                     </select></p></td>
                         </tr>
                         <td></td>
                         <tr>
-                            <td><p>Faculty of Technology : </p></td>
-                            <td><p><select name="tech">
-                                        <option>Select a point</option>
-                                        <option value="7">7</option>
-                                        <option value="5">5</option>
-                                        <option value="3">3</option>
+                            <td><p>University of Rajarata : </p></td>
+                            <td><p><select name="urj">
+                                        <option value="0">not participated</option>
                                         <option value="1">1</option>
-                                        <option value="-">not participated</option>
+                                        <option value="3">3</option>
+                                        <option value="5">5</option>
+                                        <option value="7">7</option>
 
                                     </select></p></td>
                         </tr>
+                        
+                       
                     </table>
 
                     <div class="form-submit">
@@ -562,7 +543,7 @@
                 <br>
                 <br><br>
                 <div class="text">
-                    <p>Year : <select name="year">
+                    <p>Year : <select name="year2">
                             <option>Select year</option>
                             <option value="2018">2018</option>
                             <option value="2019">2019</option>
@@ -580,14 +561,14 @@
 
                         </select></p>
                     <br><br>
-                    <p>Type : <select name="type">
+                    <p>Type : <select name="type2">
                             <option>Select a type</option>
                             <option value="uni">Inter University Championship</option>
                             <option value="other">Others</option>
 
                         </select></p>
                     <br><br>
-                    <p>Sport : <select name="sport">
+                    <p>Sport : <select name="sport2">
                             <option>Select a Sport</option>
                             <option value="Volleyball (Men)">Volleyball (Men)</option>
                             <option value="Volleyball (Women)">Volleyball (Women)</option>

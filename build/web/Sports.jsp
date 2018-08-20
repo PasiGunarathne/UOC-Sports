@@ -7,16 +7,11 @@
 <jsp:include page="WEB-INF/header.jsp"/>
 
 <!--<h1>Hello History!</h1>-->
-<div class="page-top">
-
-    <center>
-        <h1>Sports Page</h1>
-    </center>
-
-</div>
-<p>
-<!--    This page is for history details.. players acheivements and game records etc..-->
-</p>
+<br>
+  <ol class="breadcrumb">
+  <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+  <li class="breadcrumb-item active">Sports</li>
+</ol>
 
 
 <div class="main">

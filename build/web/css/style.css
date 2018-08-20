@@ -778,9 +778,11 @@ li.list_desc h4 a:hover{
 .cont{
     width: 100%;
     padding: 0% ;
-    
+   
+}
 
-
+.chart{
+    padding: 5%;
 }
 /*.cont h1{
     font-size: 3em;

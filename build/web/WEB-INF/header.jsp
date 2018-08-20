@@ -19,6 +19,8 @@
         <!-- <script src="js/jquery.easydropdown.js"></script> -->
         <!--start slider -->
         <link rel="stylesheet" href="css/fwslider.css" media="all">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+
         <script src="js/jquery-ui.min.js"></script>
         <script src="js/fwslider.js"></script>
         <!--end slider -->
@@ -99,7 +101,7 @@
 
 
                                 </div>
-                                
+
                             </div>
                             <!----search-scripts---->
                             <script src="js/classie.js"></script>

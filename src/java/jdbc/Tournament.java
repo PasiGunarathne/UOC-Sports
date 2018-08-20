@@ -3,14 +3,15 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-
 package jdbc;
 
 import java.io.IOException;
 import java.io.PrintWriter;
+import static java.lang.System.out;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
+import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -20,6 +21,7 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import static org.eclipse.jdt.internal.compiler.parser.Parser.name;
 
 /**
  *
@@ -48,6 +50,26 @@ public class Tournament extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
 //        processRequest(request, response);
+
+        try {
+            String sql = "select * from tournament_1 where name=? and password=?";
+
+            Class.forName("com.mysql.jdbc.Driver");
+            Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/uocsport", "Pasindu", "");
+            PreparedStatement ps = conn.prepareStatement(sql);
+
+            ResultSet rs = ps.executeQuery();
+
+            PrintWriter out = response.getWriter();
+            while (rs.next()) {
+
+            }
+        } catch (ClassNotFoundException ex) {
+            Logger.getLogger(Tournament.class.getName()).log(Level.SEVERE, null, ex);
+        } catch (SQLException ex) {
+            Logger.getLogger(Tournament.class.getName()).log(Level.SEVERE, null, ex);
+        }
+
     }
 
     @Override
@@ -58,7 +80,7 @@ public class Tournament extends HttpServlet {
             System.out.print("hello2");
 //            processRequest(request, response);
 
-            String sport  = request.getParameter("sport");
+            String sport = request.getParameter("sport");
             int ucsc = Integer.parseInt(request.getParameter("ucsc"));
             int fos = Integer.parseInt(request.getParameter("fos"));
             int mgt = Integer.parseInt(request.getParameter("mgt"));
@@ -70,17 +92,19 @@ public class Tournament extends HttpServlet {
             int nur = Integer.parseInt(request.getParameter("nur"));
             int tech = Integer.parseInt(request.getParameter("tech"));
             int year = Integer.parseInt(request.getParameter("year"));
-            String type  = request.getParameter("type");
+            String type = request.getParameter("type");
+
             
+
             System.out.print("hello");
 
             String sql = "insert into tournament_1(sport,ucsc,fos,mgt,art,med,law,sripali,mmi,nur,tech,year,type) values(?,?,?,?,?,?,?,?,?,?,?,?,?)";
-            
-//            String sql = "insert into (sport,ucsc) value(?,?)";
 
+//            String sql = "insert into (sport,ucsc) value(?,?)";
             Class.forName("com.mysql.jdbc.Driver");
             Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/uocsport", "Pasindu", "");
             PreparedStatement ps = conn.prepareStatement(sql);
+
             ps.setString(1, sport);
             ps.setInt(2, ucsc);
             ps.setInt(3, fos);
@@ -95,9 +119,11 @@ public class Tournament extends HttpServlet {
             ps.setInt(12, year);
             ps.setString(13, type);
 
+            
             ps.executeUpdate();
-            PrintWriter out = response.getWriter();
 
+            PrintWriter out = response.getWriter();
+            conn.close();
 //            out.println("You have successfully registered!");
             RequestDispatcher rd = request.getRequestDispatcher("Staff.jsp"); //redirect to the Registration.jsp
             rd.include(request, response);

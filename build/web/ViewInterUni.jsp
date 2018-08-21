@@ -1,4 +1,10 @@
 <%-- 
+    Document   : ViewInterUni
+    Created on : Aug 21, 2018, 3:28:07 AM
+    Author     : Pasindu
+--%>
+
+<%-- 
     Document   : InterUni
     Created on : Aug 20, 2018, 5:39:02 AM
     Author     : Pasindu
@@ -22,15 +28,35 @@
 <%@page import="java.sql.PreparedStatement"%>
 <%@page import="java.sql.DriverManager"%>
 <%@page import="java.sql.Connection"%>
-<jsp:include page="WEB-INF/header.jsp"/>
+<jsp:include page="WEB-INF/proheader.jsp"/>
 <br>
 
 <ol class="breadcrumb">
     <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-    <li class="breadcrumb-item"><a href="InterUni.jsp">Inter University Championship</a></li>
-    <li class="breadcrumb-item active">Data</li>
+    <li class="breadcrumb-item"><a href="Staff.jsp">Staff</a></li>
+    <li class="breadcrumb-item"><a href="ViewInterUni.jsp">View Data</a></li>
+    <li class="breadcrumb-item active">Inter University Results</li>
 </ol>
+<br>
+<div class="const">
+  
+    <div class="btn-group btn-lg" role="group" aria-label="Button group with nested dropdown">
+        <a href="Forum.jsp" role="button" class="btn btn-secondary">Forum</a>
+        <a href="Staff.jsp" role="button" class="btn btn-secondary">Add Data</a>
 
+  <div class="btn-group" role="group">
+    <button id="btnGroupDrop1" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      View Data
+    </button>
+    <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+      <a class="dropdown-item" href="ViewPlayer.jsp">Player records</a>
+      <a class="dropdown-item" href="ViewFreshers.jsp">Freshers results</a>
+      <a class="dropdown-item" href="ViewFaculty.jsp">Faculty results</a>
+      <a class="dropdown-item" href="ViewInterUni.jsp">Inter University results</a>
+    </div>
+  </div>
+</div>
+</div>
 
 <center>
     <br>
@@ -146,7 +172,7 @@
             var myChart = new Chart(ctx, {
                 type: 'bar',
                 data: {
- 
+               
                     labels: ["University of Colombo", "University of Moratuwa", "University of Ruhuna", "University of Sabaragamuwa", "University of Jaffna", "University of Sri Jayawardenapura", "University of Uva", "University of Kelaniya", "University of Peradeniya", "University of Rajarata"],
                     datasets: [{
                             label: 'Points',

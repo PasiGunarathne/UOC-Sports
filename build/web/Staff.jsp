@@ -6,7 +6,7 @@
 
 <jsp:include page="WEB-INF/proheader.jsp"/>
 <%
-    if(session.getAttribute("username")== null){
+    if (session.getAttribute("username") == null) {
         response.sendRedirect("Login.jsp");
     }
 %>
@@ -20,13 +20,33 @@
 </ol>-->
 <br>
 <!--<div class="container">-->
-    <ol class="breadcrumb">
-  <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-  <li class="breadcrumb-item"><a href="Staff.jsp">Staff</a></li>
-  <li class="breadcrumb-item active">Data</li>
+<ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+    <li class="breadcrumb-item"><a href="Staff.jsp">Staff</a></li>
+    <li class="breadcrumb-item active">Data</li>
 </ol>
 <!--</div>-->
 <!--</div>-->
+<br>
+<div class="const">
+  
+    <div class="btn-group btn-lg" role="group" aria-label="Button group with nested dropdown">
+        <a href="Forum.jsp" role="button" class="btn btn-secondary">Forum</a>
+        <a href="Staff.jsp" role="button" class="btn btn-secondary">Add Data</a>
+
+  <div class="btn-group" role="group">
+    <button id="btnGroupDrop1" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      View Data
+    </button>
+    <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+      <a class="dropdown-item" href="ViewPlayer.jsp">Player records</a>
+      <a class="dropdown-item" href="ViewFreshers.jsp">Freshers results</a>
+      <a class="dropdown-item" href="ViewFaculty.jsp">Faculty results</a>
+      <a class="dropdown-item" href="ViewInterUni.jsp">Inter University results</a>
+    </div>
+  </div>
+</div>
+</div>
 
 <div class="content-bottom3">
     <!--<h1>Profile : <% //out.println(username);%></h1>-->
@@ -152,16 +172,26 @@
                         </select></p>
                     <br><br>
 
-                    <p>Description :</p><textarea value="description" onfocus="this.value = '';" onblur="if (this.value == '')
+                    <p>Description :</p><textarea name="description" value="description" onfocus="this.value = '';" onblur="if (this.value == '')
                                                   ">records, achievements, penalties, injuriess, punishments, etc..</textarea>
                     <!--Need to delete those default values-->
+<!--                    <div class="alert alert-dismissible alert-warning">
+                        <button type="button" class="close" data-dismiss="alert">&times;</button>
+                        <h4 class="alert-heading">Warning!</h4>
+                        <p class="mb-0">Best check yo self, you're not looking too good. Nulla vitae elit libero, a pharetra augue. Praesent commodo cursus magna, <a href="#" class="alert-link">vel scelerisque nisl consectetur et</a>.</p>
+                    </div>
+                    <div class="alert alert-dismissible alert-primary">
+                        <button type="button" class="close" data-dismiss="alert">&times;</button>
+                        <strong>Oh snap!</strong> <a href="#" class="alert-link">Change a few things up</a> and try submitting again.
+                    </div>-->
                     <div class="form-submit">
                         <input name="submit" type="submit" id="submit" value="SUBMIT" onclick="Func()"><br>
-                        <script>
+<!--                        <script>
                             function Func() {
                                 alert("You registered successfully!");
                             }
-                        </script>
+                        </script>-->
+
                     </div>
 
                 </div>
@@ -526,8 +556,8 @@
 
                                     </select></p></td>
                         </tr>
-                        
-                       
+
+
                     </table>
 
                     <div class="form-submit">

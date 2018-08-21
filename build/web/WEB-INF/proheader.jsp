@@ -26,6 +26,14 @@ and open the template in the editor.
         <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
         <script src="js/jquery.min.js"></script>
         <!-- <script src="js/jquery.easydropdown.js"></script> -->
+        
+          <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>        <!--start slider -->
+        
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+
         <!--start slider -->
         <link rel="stylesheet" href="css/fwslider.css" media="all">
         <script src="js/jquery-ui.min.js"></script>
@@ -83,7 +91,7 @@ and open the template in the editor.
                                     <li><a href="Sports.jsp">Sports</a></li>
 
                                     <li><a href="Calendar.jsp">Calendar</a></li>
-                                    <li><a href="Forum.jsp">Forum</a></li>
+                                    <!--<li><a href="Forum.jsp">Forum</a></li>-->
                                     <!--<li><a href="Registration.jsp">Register</a></li>-->
                                     <li><a href="Logout">Logout</a></li>
 
@@ -104,13 +112,13 @@ and open the template in the editor.
                         <div class="header_right">
                             <!-- start search-->
                             <div class="search-box">
-                                <div id="sb-search" class="sb-search">
+<!--                                <div id="sb-search" class="sb-search">
                                     <form>
                                         <input class="sb-search-input" placeholder="Enter your search term..." type="search" name="search" id="search">
                                         <input class="sb-search-submit" type="submit" value="">
                                         <span class="sb-icon-search"> </span>
                                     </form>
-                                </div>
+                                </div>-->
                                 <div class="menu">
                                     <!--   <li><a class="action-btn" >
                                                                                 <i class="material-icons">Profile</i>

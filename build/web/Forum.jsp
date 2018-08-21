@@ -6,6 +6,33 @@
 
 <jsp:include page="WEB-INF/proheader.jsp"/>
 
+<br>
+<ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+    <li class="breadcrumb-item"><a href="Staff.jsp">Staff</a></li>
+    <li class="breadcrumb-item"><a href="Forum.jsp">Forum</a></li>
+    <li class="breadcrumb-item active">Data</li>
+</ol>
+<br>
+<div class="const">
+  
+    <div class="btn-group btn-lg" role="group" aria-label="Button group with nested dropdown">
+        <a href="Forum.jsp" role="button" class="btn btn-secondary">Forum</a>
+        <a href="Staff.jsp" role="button" class="btn btn-secondary">Add Data</a>
+
+  <div class="btn-group" role="group">
+    <button id="btnGroupDrop1" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      View Data
+    </button>
+    <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+      <a class="dropdown-item" href="ViewPlayer.jsp">Player records</a>
+      <a class="dropdown-item" href="ViewFreshers.jsp">Freshers results</a>
+      <a class="dropdown-item" href="ViewFaculty.jsp">Faculty results</a>
+      <a class="dropdown-item" href="ViewInterUni.jsp">Inter University results</a>
+    </div>
+  </div>
+</div>
+</div>
 <div class="content-bottom3">
 <!--<h1>Profile : <% //out.println(username);%></h1>-->
 
@@ -90,7 +117,7 @@
 
                     <label>Problem Description</label>
                     <br>
-                    <textarea rows="4" cols="71" name="description">
+                    <textarea rows="4" cols="50" name="description">
 
                     </textarea>
 

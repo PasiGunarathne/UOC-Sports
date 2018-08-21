@@ -7,6 +7,7 @@ package jdbc;
 
 import java.io.IOException;
 import java.io.PrintWriter;
+import static java.lang.System.out;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
@@ -60,7 +61,7 @@ public class Player extends HttpServlet {
             String full_name = request.getParameter("name");
 //            String reg_no = request.getParameter("rno");
 
-            int reg_no = Integer.parseInt(request.getParameter("rno"));
+            String reg_no = request.getParameter("rno");
             String n_id  = request.getParameter("nid");
             int contact_no = Integer.parseInt(request.getParameter("cno"));
             int age = Integer.parseInt(request.getParameter("age"));
@@ -75,12 +76,13 @@ public class Player extends HttpServlet {
 
             String sql = "insert into player(full_name,reg_no,n_id,contact_no,age,email_address,position,year,faculty,sport,gender,description) values(?,?,?,?,?,?,?,?,?,?,?,?)";
 //            String sql = "insert into player(full_name,reg_no) value(?,?)";
+            out.println("You have successfully registered!");
 
             Class.forName("com.mysql.jdbc.Driver");
             Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/uocsport", "Pasindu", "");
             PreparedStatement ps = conn.prepareStatement(sql);
             ps.setString(1, full_name);
-            ps.setInt(2, reg_no);
+            ps.setString(2, reg_no);
             ps.setString(3,n_id);
             ps.setInt(4, contact_no);
             ps.setInt(5, age);
@@ -93,10 +95,10 @@ public class Player extends HttpServlet {
             ps.setString(12, description);
 
             ps.executeUpdate();
-            PrintWriter out = response.getWriter();
+            PrintWriter out1 = response.getWriter();
 
-//            out.println("You have successfully registered!");
-            RequestDispatcher rd = request.getRequestDispatcher("Staff.jsp"); //redirect to the Registration.jsp
+            out.println("You have successfully registered!");
+            RequestDispatcher rd = request.getRequestDispatcher("Staff.jsp"); //redirect to the Staff.jsp
             rd.include(request, response);
 
         } catch (ClassNotFoundException ex) {

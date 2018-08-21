@@ -1,6 +1,6 @@
 <%-- 
-    Document   : InterUni
-    Created on : Aug 20, 2018, 5:39:02 AM
+    Document   : ViewFaculty
+    Created on : Aug 21, 2018, 3:22:20 AM
     Author     : Pasindu
 --%>
 
@@ -22,14 +22,36 @@
 <%@page import="java.sql.PreparedStatement"%>
 <%@page import="java.sql.DriverManager"%>
 <%@page import="java.sql.Connection"%>
-<jsp:include page="WEB-INF/header.jsp"/>
+<jsp:include page="WEB-INF/proheader.jsp"/>
 <br>
+
 
 <ol class="breadcrumb">
     <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-    <li class="breadcrumb-item"><a href="InterUni.jsp">Inter University Championship</a></li>
-    <li class="breadcrumb-item active">Data</li>
+    <li class="breadcrumb-item"><a href="Staff.jsp">Staff</a></li>
+    <li class="breadcrumb-item"><a href="ViewFaculty.jsp">View Data</a></li>
+    <li class="breadcrumb-item active">Faculty Results</li>
 </ol>
+<br>
+<div class="const">
+  
+    <div class="btn-group btn-lg" role="group" aria-label="Button group with nested dropdown">
+        <a href="Forum.jsp" role="button" class="btn btn-secondary">Forum</a>
+        <a href="Staff.jsp" role="button" class="btn btn-secondary">Add Data</a>
+
+  <div class="btn-group" role="group">
+    <button id="btnGroupDrop1" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      View Data
+    </button>
+    <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+      <a class="dropdown-item" href="ViewPlayer.jsp">Player records</a>
+      <a class="dropdown-item" href="ViewFreshers.jsp">Freshers results</a>
+      <a class="dropdown-item" href="ViewFaculty.jsp">Faculty results</a>
+      <a class="dropdown-item" href="ViewInterUni.jsp">Inter University results</a>
+    </div>
+  </div>
+</div>
+</div>
 
 
 <center>
@@ -41,11 +63,11 @@
     </div>
 
     <div class="s-container">
-        <h1>Summary of Inter University Championship 2018</h1>
+        <h1>Summary of Faculty meet 2018</h1>
         <%
             try {
-                String sql = "select * from tournament_2 where year='2018' and type='uni' ";
-                String sql2 = "SELECT SUM(uoc),SUM(uom),SUM(uor),SUM(uob),SUM(uoj),SUM(ujp),SUM(uou),SUM(uok),SUM(uop),SUM(urj) FROM tournament_2 WHERE year='2018' and type='uni';";
+                String sql = "select * from tournament_1 where year='2018' and type='Faculty' ";
+                String sql2 = "SELECT SUM(ucsc),SUM(fos),SUM(mgt),SUM(art),SUM(med),SUM(law),SUM(sripali),SUM(mmi),SUM(nur),SUM(tech) FROM tournament_1 WHERE year='2018' and type='Faculty';";
 
                 Class.forName("com.mysql.jdbc.Driver");
                 Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/uocsport", "Pasindu", "");
@@ -58,17 +80,16 @@
 
                 String str = "<table><tr><th><p>Sport</p></th>"
                         + "<th><p>|</p></th>"
-                        + "<th><p>University of Colombo</p></th>"
-                        + "<th><p>University of Moratuwa</p></th>"
-                        + "<th><p>University of Ruhuna</p></th>"
-                        + "<th><p>University of Sabaragamuwa</p></th>"
-                        + "<th><p>University of Jaffna</p></th>"
-                        + "<th><p>University of Sri Jayawardenapura</p></th>"
-                        + "<th><p>University of Uva</p></th>"
-                        + "<th><p>University of Kelaniya</p></th>"
-                        + "<th><p>University of Peradeniya</p></th>"
-                        + "<th><p>University of Rajarata</p></th>"
-                        
+                        + "<th><p>UCSC</p></th>"
+                        + "<th><p>Faculty of Science</p></th>"
+                        + "<th><p>Faculty of Management</p></th>"
+                        + "<th><p>Faculty of Arts</p></th>"
+                        + "<th><p>Faculty of Medicine</p></th>"
+                        + "<th><p>Faculty of Law</p></th>"
+                        + "<th><p>Sripali Mandapaya</p></th>"
+                        + "<th><p>MMI</p></th>"
+                        + "<th><p>Faulty of Nursing</p></th>"
+                        + "<th><p>Faculty of Technology</p></th>"
                         + " </tr>";
                 while (rs.next()) {
                     str += "<tr><td><p>" + rs.getString(1) + "</p></td>"
@@ -146,8 +167,7 @@
             var myChart = new Chart(ctx, {
                 type: 'bar',
                 data: {
- 
-                    labels: ["University of Colombo", "University of Moratuwa", "University of Ruhuna", "University of Sabaragamuwa", "University of Jaffna", "University of Sri Jayawardenapura", "University of Uva", "University of Kelaniya", "University of Peradeniya", "University of Rajarata"],
+                    labels: ["UCSC", "Faculty of Science", "Faculty of Management", "Faculty of Arts", "Faculty of Medicine", "Faculty of Law", "Sripali Mandapaya", "MMI", "Faculty of Nursing", "Faculty of Technology"],
                     datasets: [{
                             label: 'Points',
                             data: <% out.print(ranks); %>,

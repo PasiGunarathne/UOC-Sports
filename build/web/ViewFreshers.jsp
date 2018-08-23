@@ -36,7 +36,6 @@
       View Data
     </button>
     <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
-      <a class="dropdown-item" href="ViewPlayer.jsp">Player records</a>
       <a class="dropdown-item" href="ViewFreshers.jsp">Freshers results</a>
       <a class="dropdown-item" href="ViewFaculty.jsp">Faculty results</a>
       <a class="dropdown-item" href="ViewInterUni.jsp">Inter University results</a>
@@ -48,12 +47,14 @@
 <center>
     <br>
 
-    <div class="chart">
+    <!--<div class="const">-->
+         <div class="chart">
         <canvas id="myChart"></canvas>
 
 
 
     </div>
+    <!--</div>-->
 
     <div class="s-container">
         <h1>Summary of Freshers' meet 2018</h1>
@@ -195,7 +196,8 @@
                     scales: {
                         yAxes: [{
                                 ticks: {
-                                    beginAtZero: true
+                                    barbeginAtZero: true,
+                                    //scaleBeginAtZero:true
                                 }
                             }]
                     },

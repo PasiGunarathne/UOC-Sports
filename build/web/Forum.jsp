@@ -4,6 +4,14 @@
     Author     : Pasindu
 --%>
 
+<%@page import="java.sql.SQLException"%>
+<%@page import="jdbc.Forum"%>
+<%@page import="java.util.logging.Logger"%>
+<%@page import="java.util.logging.Level"%>
+<%@page import="java.sql.ResultSet"%>
+<%@page import="java.sql.PreparedStatement"%>
+<%@page import="java.sql.DriverManager"%>
+<%@page import="java.sql.Connection"%>
 <jsp:include page="WEB-INF/proheader.jsp"/>
 
 <br>
@@ -15,23 +23,22 @@
 </ol>
 <br>
 <div class="const">
-  
+
     <div class="btn-group btn-lg" role="group" aria-label="Button group with nested dropdown">
         <a href="Forum.jsp" role="button" class="btn btn-secondary">Forum</a>
         <a href="Staff.jsp" role="button" class="btn btn-secondary">Add Data</a>
 
-  <div class="btn-group" role="group">
-    <button id="btnGroupDrop1" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-      View Data
-    </button>
-    <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
-      <a class="dropdown-item" href="ViewPlayer.jsp">Player records</a>
-      <a class="dropdown-item" href="ViewFreshers.jsp">Freshers results</a>
-      <a class="dropdown-item" href="ViewFaculty.jsp">Faculty results</a>
-      <a class="dropdown-item" href="ViewInterUni.jsp">Inter University results</a>
+        <div class="btn-group" role="group">
+            <button id="btnGroupDrop1" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                View Data
+            </button>
+            <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                <a class="dropdown-item" href="ViewFreshers.jsp">Freshers results</a>
+                <a class="dropdown-item" href="ViewFaculty.jsp">Faculty results</a>
+                <a class="dropdown-item" href="ViewInterUni.jsp">Inter University results</a>
+            </div>
+        </div>
     </div>
-  </div>
-</div>
 </div>
 <div class="content-bottom3">
 <!--<h1>Profile : <% //out.println(username);%></h1>-->
@@ -162,11 +169,50 @@
 
 
         <div id="all-problems" class="tabcontent">
-            <h3>Tokyo</h3>
-            <p>Tokyo is the capital of Japan.</p>
+            <%
+                try {
+                    String sql = "select * from forum";
+//                String sql2 = "SELECT SUM(ucsc),SUM(fos),SUM(mgt),SUM(art),SUM(med),SUM(law),SUM(sripali),SUM(mmi),SUM(nur),SUM(tech) FROM tournament_1 WHERE year='2018' and type='Freshers';";
+
+                    Class.forName("com.mysql.jdbc.Driver");
+                    Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/uocsport", "Pasindu", "");
+                    PreparedStatement ps = conn.prepareStatement(sql);
+//                PreparedStatement ps2 = conn.prepareStatement(sql2);
+
+                    ResultSet rs = ps.executeQuery();
+//                ResultSet rs2 = ps2.executeQuery();
+//                PrintWriter out = response.getWriter();
+
+                    String str = "<table class =\"table\"><tr><th><p>Sport</p></th>"
+                            + "<th><p>Request in brief no</p></th>"
+                            + "<th><p>Description</p></th>"
+                            + "<th><p>Date</p></th>"
+                            + "<th><p>Faculty</p></th>"
+                            + " </tr>";
+                    while (rs.next()) {
+                        str += "<tr><td>" + rs.getString(2) + "</td>"
+                                + "<td>" + rs.getString(3) + "</td>"
+                                + "<td>" + rs.getString(4) + "</td>"
+                                + "<td>" + rs.getString(5) + "</td>"
+                                + "<td>" + rs.getString(6) + "</td>"
+                                + "</tr>";
+                    }
+                    str += "</tr></table>";
+                    out.println(str);
+
+//              
+                    conn.close();
+                } catch (ClassNotFoundException ex) {
+                    Logger.getLogger(Forum.class.getName()).log(Level.SEVERE, null, ex);
+                } catch (SQLException ex) {
+                    Logger.getLogger(Forum.class.getName()).log(Level.SEVERE, null, ex);
+                }
+
+
+            %>
         </div>
         <div id="new-request" class="tabcontent">
-                   <!--form for add problems-->
+            <!--form for add problems-->
             <form method="post" action="Sponsor">
                 <div class="to">
 
@@ -279,32 +325,76 @@
             </form>
         </div>
 
-        </div>
-
-        <div id="all-request" class="tabcontent">
-            <h3>Tokyo</h3>
-            <p>Tokyo is the capital of Japan.</p>
-        </div>
-        <script>
-            function openCity(evt, cityName) {
-                var i, tabcontent, tablinks;
-                tabcontent = document.getElementsByClassName("tabcontent");
-                for (i = 0; i < tabcontent.length; i++) {
-                    tabcontent[i].style.display = "none";
-                }
-                tablinks = document.getElementsByClassName("tablinks");
-                for (i = 0; i < tablinks.length; i++) {
-                    tablinks[i].className = tablinks[i].className.replace(" active", "");
-                }
-                document.getElementById(cityName).style.display = "block";
-                evt.currentTarget.className += " active";
-            }
-
-            // Get the element with id="defaultOpen" and click on it
-            document.getElementById("defaultOpen").click();
-        </script>
-
     </div>
+
+                <div id="all-request" class="tabcontent">
+
+         <%
+                try {
+                    String sql = "select * from sponsor";
+//                String sql2 = "SELECT SUM(ucsc),SUM(fos),SUM(mgt),SUM(art),SUM(med),SUM(law),SUM(sripali),SUM(mmi),SUM(nur),SUM(tech) FROM tournament_1 WHERE year='2018' and type='Freshers';";
+
+                    Class.forName("com.mysql.jdbc.Driver");
+                    Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/uocsport", "Pasindu", "");
+                    PreparedStatement ps = conn.prepareStatement(sql);
+//                PreparedStatement ps2 = conn.prepareStatement(sql2);
+
+                    ResultSet rs = ps.executeQuery();
+//                ResultSet rs2 = ps2.executeQuery();
+//                PrintWriter out = response.getWriter();
+
+                    String str = "<table class =\"table\"><tr><th><p>Sport</p></th>"
+                            + "<th><p>Event name</p></th>"
+                            + "<th><p>Venue</p></th>"
+                            + "<th><p>Budget</p></th>"
+                            + "<th><p>Description</p></th>"
+                            + "<th><p>Date</p></th>"
+                            + "<th><p>Faculty</p></th>"
+                            + " </tr>";
+                    while (rs.next()) {
+                        str += "<tr><td>" + rs.getString(2) + "</td>"
+                                + "<td>" + rs.getString(3) + "</td>"
+                                + "<td>" + rs.getString(4) + "</td>"
+                                + "<td>" + rs.getString(5) + "</td>"
+                                + "<td>" + rs.getString(6) + "</td>"
+                                + "<td>" + rs.getString(7) + "</td>"
+                                + "<td>" + rs.getString(8) + "</td>"
+                                + "</tr>";
+                    }
+                    str += "</tr></table>";
+                    out.println(str);
+
+//              
+                    conn.close();
+                } catch (ClassNotFoundException ex) {
+                    Logger.getLogger(Forum.class.getName()).log(Level.SEVERE, null, ex);
+                } catch (SQLException ex) {
+                    Logger.getLogger(Forum.class.getName()).log(Level.SEVERE, null, ex);
+                }
+
+
+            %>
+    </div>
+    <script>
+        function openCity(evt, cityName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(cityName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+
+        // Get the element with id="defaultOpen" and click on it
+        document.getElementById("defaultOpen").click();
+    </script>
+
+</div>
 
 
 </div>

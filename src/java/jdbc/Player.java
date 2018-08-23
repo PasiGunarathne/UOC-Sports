@@ -62,7 +62,7 @@ public class Player extends HttpServlet {
 //            String reg_no = request.getParameter("rno");
 
             String reg_no = request.getParameter("rno");
-            String n_id  = request.getParameter("nid");
+            String n_id = request.getParameter("nid");
             int contact_no = Integer.parseInt(request.getParameter("cno"));
             int age = Integer.parseInt(request.getParameter("age"));
             String email_address = request.getParameter("email");
@@ -71,10 +71,12 @@ public class Player extends HttpServlet {
             String faculty = request.getParameter("faculty");
             String sport = request.getParameter("sport");
             String gender = request.getParameter("gender");
+            String sco = request.getParameter("sco");
+
             String description = request.getParameter("description");
             System.out.print("hello");
 
-            String sql = "insert into player(full_name,reg_no,n_id,contact_no,age,email_address,position,year,faculty,sport,gender,description) values(?,?,?,?,?,?,?,?,?,?,?,?)";
+            String sql = "insert into player(full_name,reg_no,n_id,contact_no,age,email_address,position,year,faculty,sport,gender,sco,description) values(?,?,?,?,?,?,?,?,?,?,?,?,?)";
 //            String sql = "insert into player(full_name,reg_no) value(?,?)";
             out.println("You have successfully registered!");
 
@@ -83,7 +85,7 @@ public class Player extends HttpServlet {
             PreparedStatement ps = conn.prepareStatement(sql);
             ps.setString(1, full_name);
             ps.setString(2, reg_no);
-            ps.setString(3,n_id);
+            ps.setString(3, n_id);
             ps.setInt(4, contact_no);
             ps.setInt(5, age);
             ps.setString(6, email_address);
@@ -92,13 +94,14 @@ public class Player extends HttpServlet {
             ps.setString(9, faculty);
             ps.setString(10, sport);
             ps.setString(11, gender);
-            ps.setString(12, description);
+            ps.setString(12, sco);
+            ps.setString(13, description);
 
             ps.executeUpdate();
             PrintWriter out1 = response.getWriter();
 
             out.println("You have successfully registered!");
-            RequestDispatcher rd = request.getRequestDispatcher("Staff.jsp"); //redirect to the Staff.jsp
+            RequestDispatcher rd = request.getRequestDispatcher("StaffGB.jsp"); //redirect to the Staff.jsp
             rd.include(request, response);
 
         } catch (ClassNotFoundException ex) {

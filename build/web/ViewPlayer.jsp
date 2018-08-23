@@ -16,7 +16,7 @@
 <br>
 <ol class="breadcrumb">
     <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-    <li class="breadcrumb-item"><a href="Staff.jsp">Staff</a></li>
+    <li class="breadcrumb-item"><a href="StaffGB.jsp">Staff</a></li>
     <li class="breadcrumb-item"><a href="ViewPlayer.jsp">View data</a></li>
     <li class="breadcrumb-item active">Player Records</li>
 </ol>
@@ -24,8 +24,8 @@
 <div class="const">
 
     <div class="btn-group btn-lg" role="group" aria-label="Button group with nested dropdown">
-        <a href="Forum.jsp" role="button" class="btn btn-secondary">Forum</a>
-        <a href="Staff.jsp" role="button" class="btn btn-secondary">Add Data</a>
+        <a href="ForumGB.jsp" role="button" class="btn btn-secondary">Forum</a>
+        <a href="StaffGB.jsp" role="button" class="btn btn-secondary">Add Data</a>
 
         <div class="btn-group" role="group">
             <button id="btnGroupDrop1" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -33,9 +33,7 @@
             </button>
             <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
                 <a class="dropdown-item" href="ViewPlayer.jsp">Player records</a>
-                <a class="dropdown-item" href="ViewFreshers.jsp">Freshers results</a>
-                <a class="dropdown-item" href="ViewFaculty.jsp">Faculty results</a>
-                <a class="dropdown-item" href="ViewInterUni.jsp">Inter University results</a>
+                <a class="dropdown-item" href="ViewSportsCo.jsp">Sports Coordinator records</a>
             </div>
         </div>
     </div>
@@ -77,10 +75,10 @@
                         + "<th><p>Faculty</p></th>"
                         + "<th><p>Sport</p></th>"
                         + "<th><p>Gender</p></th>"
+                        + "<th><p>Sport-Coordinator</p></th>"
                         + "<th><p>Description</p></th>"
-                        + "<th><p></p></th>"
-                        + "<th><p></p></th>"
-                        
+                        + "<th><p>Edit</p></th>"
+                        + "<th><p>Delete</p></th>"
                         + " </tr></thead>";
                 while (rs.next()) {
                     str += "<tr><td>" + rs.getString(2) + "</td>"
@@ -95,6 +93,7 @@
                             + "<td>" + rs.getString(11) + "</td>"
                             + "<td>" + rs.getString(12) + "</td>"
                             + "<td>" + rs.getString(13) + "</td>"
+                            + "<td>" + rs.getString(14) + "</td>"
                             + "<td><button type=\"button\" class=\"btn\">Edit</button></td>"
                             + "<td><button type=\"button\" class=\"btn\">Delete</button></td>"
                             + "</tr>";

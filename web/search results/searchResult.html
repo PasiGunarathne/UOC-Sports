@@ -1,0 +1,406 @@
+<%@page import="model.User"%>
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Material Design Bootstrap</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Bootstrap core CSS -->
+    <link href="cssresult/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="cssresult/mdb.min.css" rel="stylesheet">
+    <!-- Your custom styles (optional) -->
+    <link href="cssresult/style.min.css" rel="stylesheet">
+<title>Welcome</title>
+</head>
+<body class="grey lighten-3">
+
+    <!--Main Navigation-->
+   
+
+        <!-- Navbar -->
+        <nav class="navbar fixed-top navbar-expand-lg navbar-light white scrolling-navbar">
+            <div class="container-fluid">
+
+                <!-- Brand -->
+                <a class="navbar-brand waves-effect" href="https://mdbootstrap.com/material-design-for-bootstrap/" target="_blank">
+                    <strong class="blue-text">UOC Sports</strong>
+                </a>
+
+                <!-- Collapse -->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Links -->
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+                    <!-- Left -->
+                    <ul class="navbar-nav mr-auto">
+
+                    </ul>
+
+                    <!-- Right -->
+       
+ 				<form class="d-flex justify-content-center">
+                        
+                        
+                          <div class="dropdown list-group list-group-flush list-group-item  " style="radius:20px;">
+			
+    						
+    						<select>
+    							
+    						    <option>Rugby(men)</option>
+       						 	<option>Rugby(women)</option>       						 
+        						<option>Volleyball(men)</option>
+        						<option>Volleyball(women)</option>
+        						<option>Netball</option>
+        						<option>Elle</option>
+        						<option>Swimming(men)</option>
+        						<option>Swimming(women)</option>
+        						
+        
+							
+
+							</select>
+							
+							
+						</div>
+                        
+                      
+                      	<div class="dropdown list-group list-group-flush list-group-item  ">
+			
+    						
+    						<select>
+    						
+    						   
+       						 	<option>2018</option>       						 
+        						<option>2017</option>
+        						<option>2016</option>
+        						<option>2015</option>
+        						<option>2014</option>
+								<option>2013</option>
+								<option>2012</option>
+							</select>
+							
+							
+						</div>
+                      
+
+           
+                       
+                        
+                        <button class="btn btn-primary btn-sm my-0 p" type="submit">
+                            <i class="fa fa-search"></i>
+                        </button>
+</form>    
+                    
+              
+
+                </div>
+
+            </div>
+        </nav>
+        
+        <!-- Navbar -->
+
+        <!-- Sidebar -->
+        <div class="sidebar-fixed position-fixed">
+        
+
+            <a class="logo-wrapper waves-effect">
+                <strong>Tournament name </strong>
+            </a>
+            
+			
+            <div class="list-group list-group-flush">
+            
+                <a href="#" class="list-group-item active waves-effect">
+                    <i class="fa fa-pie-chart mr-3"></i>Results
+                </a>
+                <a href="#" class="list-group-item list-group-item-action waves-effect">
+                    <i class="fa fa-user mr-3"></i>Compare with past years </a>             
+                
+                <a href="#" class="list-group-item active waves-effect">
+                    <i class="fa fa-pie-chart mr-3"></i>Compare with faculty
+                </a> 
+                <a href="#" class="list-group-item list-group-item-action waves-effect">
+                    <i class="fa fa-user mr-3"></i>Participants</a> 
+                <a href="#" class="list-group-item active waves-effect">
+                    <i class="fa fa-pie-chart mr-3"></i>Other
+                </a> 
+                                                       
+              
+            </div>
+
+        </div>
+        <!-- Sidebar -->
+
+  
+    <!--Main Navigation-->
+
+    <!--Main layout-->
+    <main class="pt-5 mx-lg-5">
+        <div class="container-fluid mt-5">
+
+            <!-- Heading -->
+            <div class="card mb-4 wow fadeIn">
+
+                <!--Card content-->
+                <div class="card-body d-sm-flex justify-content-between">
+
+                    <h4 class="mb-2 mb-sm-0 pt-1">
+                        <a href="https://mdbootstrap.com/material-design-for-bootstrap/" target="_blank">Sports</a>
+                        <span>/</span>
+                        <span>TournamentName</span>
+                    </h4>
+
+                  
+                </div>
+
+            </div>
+            <!-- Heading -->
+                         
+                       <!--Card-->
+                    <div class="card mb-4">
+
+                        <!--Card content-->
+                        <div class="card-body">
+
+                            <!-- List group links -->
+                            <div class="list-group list-group-flush">
+                               
+                               
+                                <a class="list-group-item list-group-item-action waves-effect">First
+                                    <span class="badge badge-success badge-pill pull-right">UCSC</span>
+                                </a>
+                                <a class="list-group-item list-group-item-action waves-effect">Second
+                                    <span class="badge badge-primary badge-pill pull-right">ART</span>
+                                </a>
+                                <a class="list-group-item list-group-item-action waves-effect">Third
+                                    <span class="badge badge-warning badge-pill pull-right">SCIENCE</span>
+                                </a>
+                            </div>
+                            <!-- List group links -->
+
+                        </div>
+
+                    </div>
+                    
+                    <!--/.Card-->
+           <!--Grid row-->
+            <div class="row wow fadeIn">
+
+                <!--Grid column-->
+                <div class="col-md-9 mb-4">
+
+                    <!--Card-->
+                    <div class="card">
+
+                        <!--Card content-->
+                        <div class="card-body">
+
+                            <canvas id="myChart"></canvas>
+
+                        </div>
+
+                    </div>
+                    <!--/.Card-->
+
+                </div>
+                <!--Grid column-->
+
+            
+
+
+                </div>
+                
+                <!--Grid column-->
+                    <!--Card-->
+                    <div class="card mb-4">
+
+                        <!-- Card header -->
+                        <div class="card-header text-center">
+                            Participants(Championship)
+                        </div>
+                         <div class="list-group list-group-flush">
+                                <a class="list-group-item list-group-item-action waves-effect">Nimal
+                                    
+                                  
+                                </a>
+                                <a class="list-group-item list-group-item-action waves-effect">Kamal
+                                   
+                                    </span>
+                                </a>
+                                <a class="list-group-item list-group-item-action waves-effect">Amal
+                                   
+                                </a>
+                                <a class="list-group-item list-group-item-action waves-effect">Sunil
+                                    
+                                </a>
+                                <a class="list-group-item list-group-item-action waves-effect">Sudath
+                                    
+                                </a>
+                            </div>
+
+                        <!--Card content-->
+                        <div class="card-body">
+
+                            
+
+                        </div>
+
+                    </div>
+                    <!--/.Card-->
+                    
+                    <!--Card-->
+                    <div class="card mb-4">
+
+                        <!-- Card header -->
+                        <div class="card-header text-center">
+                            Participants(First Runners up)
+                        </div>
+                         <div class="list-group list-group-flush">
+                                <a class="list-group-item list-group-item-action waves-effect">Nimal
+                                    
+                                  
+                                </a>
+                                <a class="list-group-item list-group-item-action waves-effect">Kamal
+                                   
+                                    </span>
+                                </a>
+                                <a class="list-group-item list-group-item-action waves-effect">Amal
+                                   
+                                </a>
+                                <a class="list-group-item list-group-item-action waves-effect">Sunil
+                                    
+                                </a>
+                                <a class="list-group-item list-group-item-action waves-effect">Sudath
+                                    
+                                </a>
+                            </div>
+
+                        <!--Card content-->
+                        <div class="card-body">
+
+                            
+
+                        </div>
+
+                    </div>
+                    <!--/.Card-->
+                    
+                    <!--Card-->
+                    <div class="card mb-4">
+
+                        <!-- Card header -->
+                        <div class="card-header text-center">
+                            Participants(Second Runners up)
+                        </div>
+                        <div class="list-group list-group-flush">
+                                <a class="list-group-item list-group-item-action waves-effect">Nimal
+                                    
+                                  
+                                </a>
+                                <a class="list-group-item list-group-item-action waves-effect">Kamal
+                                   
+                                    </span>
+                                </a>
+                                <a class="list-group-item list-group-item-action waves-effect">Amal
+                                   
+                                </a>
+                                <a class="list-group-item list-group-item-action waves-effect">Sunil
+                                    
+                                </a>
+                                <a class="list-group-item list-group-item-action waves-effect">Sudath
+                                    
+                                </a>
+                            </div>
+
+                        <!--Card content-->
+                        <div class="card-body">
+
+                            
+
+                        </div>
+
+                    </div>
+                    <!--/.Card-->
+     
+
+            </div>
+            <!--Grid row-->
+
+       </main>
+       
+    <!-- SCRIPTS -->
+    <!-- JQuery -->
+    <script type="text/javascript" src="jsresult/jquery-3.3.1.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="jsresult/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="jsresult/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="jsresult/mdb.min.js"></script>
+    <!-- Initializations -->
+    <script type="text/javascript">
+        // Animations initialization
+        new WOW().init();
+    </script>
+
+    <!-- Charts -->
+    <script>
+
+        // Line
+        var ctx = document.getElementById("myChart").getContext('2d');
+        var myChart = new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: ["Science", "UCSC", "Management", "Law", "Art", "Education"],
+                datasets: [{
+                    label: '# of Marks',
+                    data: [12, 30, 3, 5, 20, 3],
+                    backgroundColor: [
+                        'rgba(255, 99, 132, 0.2)',
+                        'rgba(54, 162, 235, 0.2)',
+                        'rgba(255, 206, 86, 0.2)',
+                        'rgba(75, 192, 192, 0.2)',
+                        'rgba(153, 102, 255, 0.2)',
+                        'rgba(255, 159, 64, 0.2)'
+                    ],
+                    borderColor: [
+                        'rgba(255,99,132,1)',
+                        'rgba(54, 162, 235, 1)',
+                        'rgba(255, 206, 86, 1)',
+                        'rgba(75, 192, 192, 1)',
+                        'rgba(153, 102, 255, 1)',
+                        'rgba(255, 159, 64, 1)'
+                    ],
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                scales: {
+                    yAxes: [{
+                        ticks: {
+                            beginAtZero: true
+                        }
+                    }]
+                }
+            }
+        });
+
+     
+
+    
+
+    </script>
+
+  
+</body>
+</html>

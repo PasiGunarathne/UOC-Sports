@@ -2336,7 +2336,7 @@ body {font-family: Arial;}
     border-top: none;
 }
 .tablinks{
-    width: 20%;
+    width: 50%;
 }
 
 /*Search function*/
@@ -2355,12 +2355,12 @@ body {font-family: Arial;}
     border-collapse: collapse; /* Collapse borders */
     width: 100%; /* Full-width */
     border: 1px solid #ddd; /* Add a grey border */
-    font-size: 18px; /* Increase font-size */
+    font-size: 15px; /* Increase font-size */
 }
 
 #myTable th, #myTable td {
-    text-align: left; /* Left-align text */
-    padding: 12px; /* Add padding */
+    text-align: center; /* center text */
+    padding: 10px; /* Add padding */
 }
 
 #myTable tr {

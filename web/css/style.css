@@ -16,7 +16,7 @@ body a{
 }
 .header{
     background:#000;
-    padding: 2.5% 0;
+    padding: 1.0% 0;
 }
 .header-left{
     float:left;
@@ -24,8 +24,64 @@ body a{
 }
 .container{ /*New*/
     background: #0001;
-    width: 90%;
+    width: 80%;    
 }
+.Scontainer{ /*New*/
+    background: #0001;
+    width: 80%;   
+    margin-left: 15%;
+}
+
+.const{
+    width: 80%;
+    margin-left: 5%;
+}
+.hid-container{
+    background: #0002;
+    width: 70%;   
+}
+.s-container{
+    background: #0001;
+    width: 90%;    
+    text-align: left;
+    padding: 3%;
+    font-size: 20px;
+
+}
+.vp-container{
+    background: #0001;
+    width: 95%;    
+    text-align: center;
+    padding: 1%;
+    font-size: 15px;
+    
+}
+.vp-container table{
+    width: 95%;    
+    text-align: center;
+    padding: 1%;
+    font-size: 15px;
+    
+}
+
+
+s-container h1{
+    font-size: 3em;
+    text-align: center;
+    padding: 1%;
+    text-transform: uppercase;
+    margin-bottom: 5%;
+}
+.s-container1{
+    background: #0001;
+    width: 90%;    
+    text-align: left;
+    padding: 3%;
+    font-size: 20px;
+    margin-top: 60%;
+
+}
+
 .logo{
     float:left;
     margin-right: -2%;
@@ -80,6 +136,42 @@ body a{
     padding: 4% 0;
 }
 
+/*sports+slide*/
+.main-content{
+    width: 100%;
+    float: left;
+    /*padding: 1%;*/
+}
+
+/*all sports*/
+.col-m-one{  
+    width: 15%;
+    float: left;
+    padding: 1%;
+}
+.table {
+    border-collapse: collapse;
+    width: 100%;
+}
+th, td {
+    padding: 5px;
+    text-align: center;
+    border-bottom: 2px solid #ddd;
+}
+tr:hover {background-color:#f5f5f5;}
+
+/*slide*/
+.col-m-two{
+    width: 100%;
+    float: left;
+    /*padding: 1%;*/
+}
+.col-m-three{
+    width: 20%;
+    float: left;
+
+}
+
 /*.bodylogin{
     margin: 0;
     padding: 0;
@@ -124,7 +216,7 @@ body a{
 .login-box input{
     width: 100%;
     margin-bottom: 20px;
-    
+
 }
 
 .login-box input[type="text"], input[type="password"]
@@ -136,7 +228,7 @@ body a{
     height: 40px;
     color: #fff;
     font-size: 16px;
-    
+
 }
 .login-box input[type="submit"]{
     border: none;
@@ -686,9 +778,45 @@ li.list_desc h4 a:hover{
     background-position: center;
     background-size: 100% 100%;
     height:100%;
-    padding:15% 0;
+    padding:5% 0;
 }
 
+.content-m-bottom{
+    width:100%;
+    /*background: url(../images/SA.jpg)no-repeat center top;*/
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-position: center;
+    background-size: 100% 100%;
+    height:100%;
+    padding:1% 0;
+}
+
+.breadcrumb{
+    padding: 1% ;
+    width: 90%;
+    margin-left: 5%;
+
+}
+
+.cont{
+    width: 100%;
+    padding: 0% ;
+   
+}
+
+.chart{
+    padding: 5%;
+}
+/*.cont h1{
+    font-size: 3em;
+    text-align: center;
+    padding: 1%;
+    text-transform: uppercase;
+    margin-bottom: 5%;
+}*/
 p.m_1{
     color: #FFF;
     font-size: 0.85em;
@@ -701,7 +829,9 @@ p.m_2{
     line-height: 2.2em;
 }
 .features{
-    padding:8% 0;
+    padding:2% 0;
+    margin-left: 1%;
+    margin-right: 1%;
 }
 h3.m_3{
     color: #000;
@@ -709,7 +839,7 @@ h3.m_3{
     font-weight: 800;
     text-align: center;
     text-transform: uppercase;
-    margin-bottom:2%;
+    margin-bottom:5%;
 }
 .close_but{
     text-align:center;
@@ -884,12 +1014,15 @@ h4.m_4{
 }
 h4.m_4 a{
     color:#000;
-    font-size:1em;
+    font-size:1.5em;
     text-decoration:none;
     font-weight:600;
 }
-h4.m_4 a:hover{
+/*h4.m_4 a:hover{
     color:#444;
+}*/
+h4.m_4 a:hover{
+    color:#6900AF;
 }
 p.m_5{
     color:#222;
@@ -1167,19 +1300,19 @@ li.youtube a span {
 }
 .shop_desc{
     border:1px solid #E0E0E0;
-    padding:5%;
+    padding:2%;
 }
 .shop_desc h3{
     margin-bottom:5px;
 }
 .shop_desc h3 a{
-    color: #333;
-    font-size: 16px;
+    color: #000;
+    font-size: 32px;
     font-weight: 600;
     text-decoration: none;
 }
 .shop_desc h3 a:hover{
-    color:#666;
+    color:#6900AF;
 }
 .shop_desc p{
     color:#555;
@@ -2161,5 +2294,82 @@ fieldset.input input[type="submit"]:hover {
         float: none;
         margin: 10px 0;
     }
+}
+
+/*for tabs in staff.jsp*/
+body {font-family: Arial;}
+
+/* Style the tab */
+.tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+    background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+    background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+}
+.tablinks{
+    width: 20%;
+}
+
+/*Search function*/
+#myInput {
+    background-image: url('/css/searchicon.png'); /* Add a search icon to input */
+    background-position: 10px 12px; /* Position the search icon */
+    background-repeat: no-repeat; /* Do not repeat the icon image */
+    width: 100%; /* Full-width */
+    font-size: 16px; /* Increase font-size */
+    padding: 12px 20px 12px 40px; /* Add some padding */
+    border: 1px solid #ddd; /* Add a grey border */
+    margin-bottom: 12px; /* Add some space below the input */
+}
+
+#myTable {
+    border-collapse: collapse; /* Collapse borders */
+    width: 100%; /* Full-width */
+    border: 1px solid #ddd; /* Add a grey border */
+    font-size: 15px; /* Increase font-size */
+}
+
+#myTable th, #myTable td {
+    text-align: center; /* center text */
+    padding: 10px; /* Add padding */
+}
+
+#myTable tr {
+    /* Add a bottom border to all table rows */
+    border-bottom: 1px solid #ddd;
+}
+
+#myTable tr.header, #myTable tr:hover {
+    /* Add a grey background color to the table header and on hover */
+    background-color: #f1f1f1;
 }
 

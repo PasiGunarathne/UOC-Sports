@@ -105,7 +105,7 @@
     #fwslider .slide_content {cursor: pointer;}
     #fwslider .title {
         margin-left: 19%;
-        font-size: 3em;
+        font-size: 5em;
     }
 }
 @media (max-width:1366px){

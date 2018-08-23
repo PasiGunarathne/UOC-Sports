@@ -79,13 +79,19 @@ public class Login extends HttpServlet {
 //                    rd.include(request, response);
                     response.sendRedirect("Admin.jsp");
 
-                } else {
+                } else if(name.equals("Pasindu")){
                     HttpSession session = request.getSession();
                     session.setAttribute("username", name);
 //                    RequestDispatcher rd = request.getRequestDispatcher("Staff.jsp");
 //                    rd.include(request, response);
                     response.sendRedirect("Staff.jsp");
-
+                }
+                else{
+                    HttpSession session = request.getSession();
+                    session.setAttribute("username", name);
+//                    RequestDispatcher rd = request.getRequestDispatcher("Staff.jsp");
+//                    rd.include(request, response);
+                    response.sendRedirect("StaffGB.jsp");
                 }
 //                if (name.equals("Pasindu")) {
 //                    RequestDispatcher rd = request.getRequestDispatcher("Staff.jsp");
